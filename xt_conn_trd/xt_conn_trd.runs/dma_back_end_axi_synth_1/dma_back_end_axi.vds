@@ -1,0 +1,1231 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Fri Sep  1 16:16:27 2017
+# Process ID: 17237
+# Log file: /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/dma_back_end_axi_synth_1/dma_back_end_axi.vds
+# Journal file: /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/dma_back_end_axi_synth_1/vivado.jou
+#-----------------------------------------------------------
+source dma_back_end_axi.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1761-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.cache/wt [current_project]
+# set_property parent.project_path /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths {
+#   /home/ppan/DUT/small_data_compression
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs
+# } [current_project]
+# set_property verilog_define {USE_XPHY=1 USE_PVTMON=1} [current_fileset]
+# read_verilog -library xil_defaultlib /home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp
+# read_xdc -mode out_of_context /home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc
+# catch { write_hwdef -file dma_back_end_axi.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top dma_back_end_axi -part xc7vx690tffg1761-2 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5 -mode out_of_context
+Command: synth_design -top dma_back_end_axi -part xc7vx690tffg1761-2 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2017.09' and will expire in 29 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 906.461 ; gain = 149.293 ; free physical = 7699 ; free virtual = 25158
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dma_back_end_axi' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:18198]
+INFO: [Synth 8-638] synthesizing module 'xil_pcie_tx_axi' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31933]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo' (1#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo__parameterized0' (1#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'xil_pcie_tx_axi' (2#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31933]
+INFO: [Synth 8-638] synthesizing module 'target_axi' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:27747]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-4472] Detected and applied attribute ram_style = distributed [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3013]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram' (3#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_block_ram' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3444]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_block_ram' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-638] synthesizing module 'RAMB36SDP' [/home/ppan/Xilinx/Vivado/2014.3.1/scripts/rt/data/unisim_comp.v:33876]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36SDP' (5#1) [/home/ppan/Xilinx/Vivado/2014.3.1/scripts/rt/data/unisim_comp.v:33876]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_block_ram' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_block_ram' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3444]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_stream_fifo' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4974]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_stream_fifo' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4974]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized0' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized0' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized1' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized1' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_stream_fifo__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4974]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_stream_fifo__parameterized0' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4974]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_shallow_ram' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31736]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops' (9#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31736]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized2' (9#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-638] synthesizing module 'be_gray_sync_bus' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_bin_to_gray' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-256] done synthesizing module 'be_bin_to_gray' (10#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops_width' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31736]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops__parameterized0' (10#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31736]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops_width' (11#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'be_gray_to_bin' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_to_bin' (12#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_sync_bus' (13#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_shallow_ram' (14#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo_reg' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4796]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo_reg' (15#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4796]
+INFO: [Synth 8-638] synthesizing module 'be_toggle_pos_sync' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:5275]
+INFO: [Synth 8-256] done synthesizing module 'be_toggle_pos_sync' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:5275]
+INFO: [Synth 8-638] synthesizing module 'be_gray_sync_bus__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_bin_to_gray__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-256] done synthesizing module 'be_bin_to_gray__parameterized0' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops_width__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops_width__parameterized0' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'be_gray_to_bin__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_to_bin__parameterized0' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_sync_bus__parameterized0' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized3' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized2' (16#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'util_reg' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31592]
+INFO: [Synth 8-256] done synthesizing module 'util_reg' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31592]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized4' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized3' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_block_ram' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_block_ram__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_block_ram__parameterized0' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-638] synthesizing module 'be_gray_sync_bus__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_bin_to_gray__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-256] done synthesizing module 'be_bin_to_gray__parameterized1' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops_width__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops_width__parameterized1' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'be_gray_to_bin__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_to_bin__parameterized1' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_sync_bus__parameterized1' (17#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_block_ram' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized5' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized5' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized4' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_block_ram__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_block_ram__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_block_ram__parameterized1' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_block_ram__parameterized0' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_shallow_ram__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized6' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized6' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-638] synthesizing module 'be_gray_sync_bus__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_bin_to_gray__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-256] done synthesizing module 'be_bin_to_gray__parameterized2' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops_width__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops_width__parameterized2' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'be_gray_to_bin__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_to_bin__parameterized2' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_sync_bus__parameterized2' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_shallow_ram__parameterized0' (18#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-4512] found unpartitioned construct node [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:30683]
+INFO: [Synth 8-256] done synthesizing module 'target_axi' (19#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:27747]
+INFO: [Synth 8-638] synthesizing module 'target_axi__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:27747]
+INFO: [Synth 8-4512] found unpartitioned construct node [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:30683]
+INFO: [Synth 8-256] done synthesizing module 'target_axi__parameterized0' (19#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:27747]
+INFO: [Synth 8-638] synthesizing module 'msix_int_arb' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:85]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized7' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized7' (19#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'msix_int_arb' (20#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:85]
+INFO: [Synth 8-638] synthesizing module 'cpl_monitor' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:11079]
+INFO: [Synth 8-226] default block is never used [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:11791]
+INFO: [Synth 8-256] done synthesizing module 'cpl_monitor' (21#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:11079]
+INFO: [Synth 8-638] synthesizing module 'master_axi' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:22757]
+INFO: [Synth 8-256] done synthesizing module 'master_axi' (22#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:22757]
+INFO: [Synth 8-638] synthesizing module 'dword_master' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:22197]
+INFO: [Synth 8-256] done synthesizing module 'dword_master' (23#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:22197]
+INFO: [Synth 8-638] synthesizing module 'be_stream_arb' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3773]
+INFO: [Synth 8-256] done synthesizing module 'be_stream_arb' (24#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3773]
+INFO: [Synth 8-638] synthesizing module 'desc_update_engine' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:17481]
+INFO: [Synth 8-256] done synthesizing module 'desc_update_engine' (25#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:17481]
+INFO: [Synth 8-638] synthesizing module 'desc_engine' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:15943]
+INFO: [Synth 8-226] default block is never used [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:16586]
+INFO: [Synth 8-256] done synthesizing module 'desc_engine' (26#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:15943]
+INFO: [Synth 8-638] synthesizing module 'common_registers' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:10463]
+WARNING: [Synth 8-151] case item 3'b000 is unreachable [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:10990]
+INFO: [Synth 8-256] done synthesizing module 'common_registers' (27#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:10463]
+INFO: [Synth 8-638] synthesizing module 'c2s_dma_axi' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-638] synthesizing module 'dma_registers_packet' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:20663]
+INFO: [Synth 8-638] synthesizing module 'parse_dma_constants' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:23814]
+INFO: [Synth 8-256] done synthesizing module 'parse_dma_constants' (28#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:23814]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized5' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized8' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized8' (28#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized5' (28#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-226] default block is never used [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:22070]
+INFO: [Synth 8-4471] merging register 'clk_period_in_ns1_reg[7:0]' into 'clk_period_in_ns0_reg[7:0]' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:21191]
+INFO: [Synth 8-4471] merging register 'clk_period_in_ns2_reg[7:0]' into 'clk_period_in_ns0_reg[7:0]' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:21192]
+INFO: [Synth 8-4471] merging register 'clk_period_in_ns3_reg[7:0]' into 'clk_period_in_ns0_reg[7:0]' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:21193]
+INFO: [Synth 8-256] done synthesizing module 'dma_registers_packet' (29#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:20663]
+INFO: [Synth 8-638] synthesizing module 'c2s_dma_engine_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7846]
+INFO: [Synth 8-638] synthesizing module 'cmd_if_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:9981]
+INFO: [Synth 8-256] done synthesizing module 'cmd_if_pkt' (30#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:9981]
+INFO: [Synth 8-638] synthesizing module 'desc_store_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:16936]
+INFO: [Synth 8-256] done synthesizing module 'desc_store_pkt' (31#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:16936]
+INFO: [Synth 8-638] synthesizing module 'data_if_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:14557]
+INFO: [Synth 8-226] default block is never used [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:15740]
+INFO: [Synth 8-256] done synthesizing module 'data_if_pkt' (32#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:14557]
+INFO: [Synth 8-638] synthesizing module 'c2s_tx_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:8549]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized6' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized9' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized9' (32#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized6' (32#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-256] done synthesizing module 'c2s_tx_pkt' (33#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:8549]
+INFO: [Synth 8-256] done synthesizing module 'c2s_dma_engine_pkt' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7846]
+INFO: [Synth 8-638] synthesizing module 'c2s_axi_if' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:5468]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_shallow_ram__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized10' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized10' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-638] synthesizing module 'be_gray_sync_bus__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_bin_to_gray__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-256] done synthesizing module 'be_bin_to_gray__parameterized3' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops_width__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops_width__parameterized3' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'be_gray_to_bin__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_to_bin__parameterized3' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_sync_bus__parameterized3' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_shallow_ram__parameterized1' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo__parameterized1' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-638] synthesizing module 'be_sc_fifo_shallow_ram__parameterized7' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized11' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized11' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_sc_fifo_shallow_ram__parameterized7' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:3118]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo__parameterized2' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_shallow_ram__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized12' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized12' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_shallow_ram__parameterized2' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_block_ram__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_block_ram__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_block_ram__parameterized2' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_block_ram__parameterized1' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo_reg__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4796]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo_reg__parameterized0' (34#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4796]
+INFO: [Synth 8-256] done synthesizing module 'c2s_axi_if' (35#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:5468]
+INFO: [Synth 8-256] done synthesizing module 'c2s_dma_axi' (36#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-638] synthesizing module 'c2s_dma_axi__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-256] done synthesizing module 'c2s_dma_axi__parameterized0' (36#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-638] synthesizing module 'c2s_dma_axi__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-256] done synthesizing module 'c2s_dma_axi__parameterized1' (36#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-638] synthesizing module 'c2s_dma_axi__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-256] done synthesizing module 'c2s_dma_axi__parameterized2' (36#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:7200]
+INFO: [Synth 8-638] synthesizing module 's2c_dma_axi' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-638] synthesizing module 's2c_dma_engine_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:26101]
+INFO: [Synth 8-638] synthesizing module 's2c_tx_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:26874]
+INFO: [Synth 8-638] synthesizing module 'cpl_reorder_queue_pkt' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:12879]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized13' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized13' (36#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized14' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized14' (36#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'cpl_reorder_queue_pkt' (37#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:12879]
+INFO: [Synth 8-256] done synthesizing module 's2c_tx_pkt' (38#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:26874]
+INFO: [Synth 8-256] done synthesizing module 's2c_dma_engine_pkt' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:26101]
+INFO: [Synth 8-638] synthesizing module 's2c_axi_if' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:24253]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_shallow_ram__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_shallow_ram__parameterized15' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_shallow_ram__parameterized15' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2946]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_shallow_ram__parameterized3' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1265]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo__parameterized3' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-638] synthesizing module 'be_dc_fifo_block_ram__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_inferred_block_ram__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-256] done synthesizing module 'be_inferred_block_ram__parameterized3' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2447]
+INFO: [Synth 8-638] synthesizing module 'be_gray_sync_bus__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-638] synthesizing module 'be_bin_to_gray__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-256] done synthesizing module 'be_bin_to_gray__parameterized4' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1117]
+INFO: [Synth 8-638] synthesizing module 'util_sync_flops_width__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-256] done synthesizing module 'util_sync_flops_width__parameterized4' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:31840]
+INFO: [Synth 8-638] synthesizing module 'be_gray_to_bin__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_to_bin__parameterized4' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2338]
+INFO: [Synth 8-256] done synthesizing module 'be_gray_sync_bus__parameterized4' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:2179]
+INFO: [Synth 8-256] done synthesizing module 'be_dc_fifo_block_ram__parameterized2' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:1738]
+INFO: [Synth 8-638] synthesizing module 'be_tiny_fifo__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 'be_tiny_fifo__parameterized4' (39#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:4556]
+INFO: [Synth 8-256] done synthesizing module 's2c_axi_if' (40#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:24253]
+INFO: [Synth 8-256] done synthesizing module 's2c_dma_axi' (41#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-638] synthesizing module 's2c_dma_axi__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-256] done synthesizing module 's2c_dma_axi__parameterized0' (41#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-638] synthesizing module 's2c_dma_axi__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-256] done synthesizing module 's2c_dma_axi__parameterized1' (41#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-638] synthesizing module 's2c_dma_axi__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-256] done synthesizing module 's2c_dma_axi__parameterized2' (41#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:25396]
+INFO: [Synth 8-256] done synthesizing module 'dma_back_end_axi' (42#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:18198]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[7]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[6]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[5]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[4]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[3]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[2]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[1]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[0]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[7]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[6]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[5]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[4]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[3]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[2]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[1]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tkeep[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1156.844 ; gain = 399.676 ; free physical = 7437 ; free virtual = 24906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1156.844 ; gain = 399.676 ; free physical = 7436 ; free virtual = 24905
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1761/Package.xml
+Loading io standards from /home/ppan/Xilinx/Vivado/2014.3.1/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc]
+WARNING: [Constraints 18-633] Creating clock c2s_aclk[3] with 4 sources. [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc:3]
+WARNING: [Constraints 18-633] Creating clock s2c_aclk[3] with 4 sources. [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc:4]
+Finished Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 78 instances were transformed.
+  RAMB36SDP => RAMB36E1: 78 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2216.609 ; gain = 36.996 ; free physical = 6494 ; free virtual = 23964
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 6490 ; free virtual = 23960
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 6490 ; free virtual = 23960
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 6490 ; free virtual = 23960
+---------------------------------------------------------------------------------
+ROM "r_tx_cfg" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'msix_int_arb'
+INFO: [Synth 8-802] inferred FSM for state register 'gnt_sel_reg' in module 'cpl_monitor'
+INFO: [Synth 8-802] inferred FSM for state register 'master_state_reg' in module 'dword_master'
+INFO: [Synth 8-802] inferred FSM for state register 'gnt_sel_reg' in module 'be_stream_arb'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'desc_update_engine'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'dma_registers_packet'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'data_if_pkt'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_cmd_reg' in module 'c2s_axi_if'
+ROM "out_sav_2" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3936] Found unconnected internal register 'c3_hold_data_reg' and it is trimmed from '256' to '248' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp:13988]
+INFO: [Synth 8-3354] encoded FSM with state register 'gnt_sel_reg' using encoding 'one-hot' in module 'cpl_monitor'
+INFO: [Synth 8-3354] encoded FSM with state register 'master_state_reg' using encoding 'one-hot' in module 'dword_master'
+INFO: [Synth 8-3354] encoded FSM with state register 'gnt_sel_reg' using encoding 'one-hot' in module 'be_stream_arb'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'desc_update_engine'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'data_if_pkt'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:00:57 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 6483 ; free virtual = 23954
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |target_axi__GB0                  |           1|     29493|
+|2     |target_axi__GB1                  |           1|      9068|
+|3     |target_axi__GB2                  |           1|      1656|
+|4     |target_axi__parameterized0__GB0  |           1|     29544|
+|5     |target_axi__parameterized0__GB1  |           1|      9068|
+|6     |target_axi__parameterized0__GB2  |           1|      1656|
+|7     |c2s_dma_engine_pkt               |           4|     17261|
+|8     |c2s_axi_if__GBM0                 |           1|     20076|
+|9     |c2s_axi_if__GBM1                 |           1|     16376|
+|10    |c2s_axi_if__GBM2                 |           1|       196|
+|11    |c2s_axi_if__GBM3                 |           1|     12869|
+|12    |c2s_dma_axi__GC0                 |           1|      5693|
+|13    |c2s_dma_axi__parameterized0__GC0 |           1|      5693|
+|14    |c2s_dma_axi__parameterized1__GC0 |           1|      5693|
+|15    |c2s_dma_axi__parameterized2__GC0 |           1|      5693|
+|16    |cpl_reorder_queue_pkt__GB0       |           1|     29320|
+|17    |muxpart__387                     |           1|      7936|
+|18    |cpl_reorder_queue_pkt__GB2       |           1|     15873|
+|19    |cpl_reorder_queue_pkt__GB3       |           1|     32512|
+|20    |cpl_reorder_queue_pkt__GB4       |           1|      8192|
+|21    |cpl_reorder_queue_pkt__GB5       |           1|     24576|
+|22    |cpl_reorder_queue_pkt__GB6       |           1|     19330|
+|23    |cpl_reorder_queue_pkt__GB7       |           1|     17194|
+|24    |cpl_reorder_queue_pkt__GB8       |           1|      1875|
+|25    |cpl_reorder_queue_pkt__GB9       |           1|       706|
+|26    |s2c_tx_pkt__GC0                  |           1|      2210|
+|27    |s2c_dma_engine_pkt__GCM0         |           1|      8261|
+|28    |s2c_axi_if                       |           4|     21130|
+|29    |s2c_dma_axi__GC0                 |           1|      5689|
+|30    |s2c_dma_axi__parameterized0__GC0 |           1|      5689|
+|31    |s2c_dma_axi__parameterized1__GC0 |           1|      5689|
+|32    |s2c_dma_axi__parameterized2__GC0 |           1|      5689|
+|33    |dma_back_end_axi__GCB0           |           1|     39488|
+|34    |dma_back_end_axi__GCB1           |           1|     15179|
+|35    |dma_back_end_axi__GCB2           |           1|     21343|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:07 ; elapsed = 00:01:01 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 6481 ; free virtual = 23953
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[11] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[10] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[9] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[8] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[7] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[6] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[5] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[4] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[3] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[2] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi has port c2s_arsize[0] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_awsize[2] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_awsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_awsize[0] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_bready driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_arsize[2] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_arsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_arsize[0] driven by constant 1
+WARNING: [Synth 8-3917] design dma_back_end_axi has port t_rready driven by constant 1
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[74]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[73]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[72]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[71]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[70]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[69]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[68]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[67]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[66]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[65]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[64]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[63]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[62]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[61]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[60]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[59]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[58]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[57]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[56]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[55]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[54]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[53]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[52]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[51]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[50]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[49]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[48]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[47]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[46]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[45]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[44]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[43]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[42]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[41]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[40]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[39]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[38]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[37]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[36]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[35]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[34]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[33]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[31]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[30]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[29]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[28]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[27]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[26]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[25]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[24]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[23]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[22]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[21]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[20]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[19]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[18]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[17]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[16]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[15]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[14]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[13]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[12]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[11]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[10]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[9]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[8]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[7]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[6]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[5]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[4]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[3]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[2]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[1]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tuser[0]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[7]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[6]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[5]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[4]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[3]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[2]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[1]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_rc_tkeep[0]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tuser[84]
+WARNING: [Synth 8-3331] design dma_back_end_axi has unconnected port m_axis_cq_tuser[83]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition target_axi__GB0
+Optimizing partition target_axi__parameterized0__GB0
+Optimizing partition c2s_dma_engine_pkt
+Optimizing partition c2s_axi_if__GBM0
+Optimizing partition c2s_axi_if__GBM1
+Optimizing partition c2s_axi_if__GBM3
+Optimizing partition cpl_reorder_queue_pkt__GB0
+Optimizing partition cpl_reorder_queue_pkt__GB2
+Optimizing partition cpl_reorder_queue_pkt__GB3
+Optimizing partition cpl_reorder_queue_pkt__GB5
+Optimizing partition cpl_reorder_queue_pkt__GB6
+Optimizing partition cpl_reorder_queue_pkt__GB7
+Optimizing partition s2c_axi_if
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_ready driven by constant 1
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_abort_ack driven by constant 1
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[9] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[8] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[7] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[6] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[5] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[4] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[3] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[2] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[1] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port cmd_stop_bcount[0] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port s2c_awsize[2] driven by constant 1
+WARNING: [Synth 8-3917] design s2c_axi_if has port s2c_awsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design s2c_axi_if has port s2c_awsize[0] driven by constant 1
+WARNING: [Synth 8-3917] design s2c_axi_if has port s2c_bready driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition dma_back_end_axi__GCB0
+Optimizing partition dma_back_end_axi__GCB1
+ROM "r_tx_cfg" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[63] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[62] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[61] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[60] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[59] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[58] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[57] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[56] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[55] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[54] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[53] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[52] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[51] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[50] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[49] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[48] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[47] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[46] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[45] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[44] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[43] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[42] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[41] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[40] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[39] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[38] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[37] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[36] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[35] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[34] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[33] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[32] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[31] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[30] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[29] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[28] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[27] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[26] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[25] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[24] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[23] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[22] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[21] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[20] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[19] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[15] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[11] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[10] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[9] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[8] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[6] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[2] driven by constant 0
+WARNING: [Synth 8-3917] design dma_back_end_axi__GCB1 has port tx_n_addr[1] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition dma_back_end_axi__GCB2
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 4321 ; free virtual = 21870
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 4321 ; free virtual = 21870
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |target_axi__GB0                  |           1|     35608|
+|2     |target_axi__GB1                  |           1|      9067|
+|3     |target_axi__GB2                  |           1|      1653|
+|4     |target_axi__parameterized0__GB0  |           1|     35724|
+|5     |target_axi__parameterized0__GB1  |           1|      9067|
+|6     |target_axi__parameterized0__GB2  |           1|      1653|
+|7     |c2s_dma_engine_pkt               |           4|     17742|
+|8     |c2s_axi_if__GBM0                 |           4|     20840|
+|9     |c2s_axi_if__GBM1                 |           4|     16872|
+|10    |c2s_axi_if__GBM2                 |           4|       196|
+|11    |c2s_axi_if__GBM3                 |           4|     14064|
+|12    |c2s_dma_axi__GC0                 |           1|      6119|
+|13    |c2s_dma_axi__parameterized0__GC0 |           1|      6119|
+|14    |c2s_dma_axi__parameterized1__GC0 |           1|      6119|
+|15    |c2s_dma_axi__parameterized2__GC0 |           1|      6119|
+|16    |cpl_reorder_queue_pkt__GB0       |           4|     29320|
+|17    |muxpart__387                     |           4|      7936|
+|18    |cpl_reorder_queue_pkt__GB2       |           4|     15873|
+|19    |cpl_reorder_queue_pkt__GB3       |           4|     32512|
+|20    |cpl_reorder_queue_pkt__GB4       |           4|      8192|
+|21    |cpl_reorder_queue_pkt__GB5       |           4|     24576|
+|22    |cpl_reorder_queue_pkt__GB6       |           4|     19826|
+|23    |cpl_reorder_queue_pkt__GB7       |           4|     17194|
+|24    |cpl_reorder_queue_pkt__GB8       |           4|      1894|
+|25    |cpl_reorder_queue_pkt__GB9       |           4|       706|
+|26    |s2c_tx_pkt__GC0                  |           4|      2070|
+|27    |s2c_dma_engine_pkt__GCM0         |           4|      8196|
+|28    |s2c_axi_if                       |           4|     22506|
+|29    |s2c_dma_axi__GC0                 |           1|      6115|
+|30    |s2c_dma_axi__parameterized0__GC0 |           1|      6115|
+|31    |s2c_dma_axi__parameterized1__GC0 |           1|      6115|
+|32    |s2c_dma_axi__parameterized2__GC0 |           1|      6115|
+|33    |dma_back_end_axi__GCB0           |           1|     32754|
+|34    |dma_back_end_axi__GCB1           |           1|     17991|
+|35    |dma_back_end_axi__GCB2           |           1|     21077|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_1/\axi_wr_err/half_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_1/\axi_data_width_div_eq1.axi_rd_wr_resp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_1/b_en_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_fifo/wr_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_fifo/wr_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_fifo/wr_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_fifo/wr_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_fifo/wr_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_remain_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_remain_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_remain_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/i_338/\axi_wlen_remain_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/r_wr_en_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_level_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_level_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_level_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_level_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_level_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_level_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (target_cpli_2/t_wvalid_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (target_cpli_2/t_wlast_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (target_cpli_2/\axi_wlen_fifo/rd_empty_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/one_second_ctr_tc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[94] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[93] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[106] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[104] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[105] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[102] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[112] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[113] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[110] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[108] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[109] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[118] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[119] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[116] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[117] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[114] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[115] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[123] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[120] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[121] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axii_73 /\dma_registers_packet/status_fifo_wr_data_reg[64] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition target_axi__GB0
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[4] ) is unused and will be removed from module be_sc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_sc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[8] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (r_wr_en_reg) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[8] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[7] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[6] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[5] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[4] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[3] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[2] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[1] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[0] ) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (rd_empty_reg) is unused and will be removed from module be_sc_fifo_block_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\da_dat_reg[262] ) is unused and will be removed from module be_tiny_stream_fifo__1.
+WARNING: [Synth 8-3332] Sequential element (\db_dat_reg[262] ) is unused and will be removed from module be_tiny_stream_fifo__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[4] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[3] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[2] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[1] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[0] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/r_q_ungray_reg[5] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/r_q_ungray_reg[4] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/r_q_ungray_reg[3] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/r_q_ungray_reg[2] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/r_q_ungray_reg[1] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/r_q_ungray_reg[0] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[5] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[4] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[3] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[2] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[1] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[0] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_xfer_level_reg[5] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_xfer_level_reg[4] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_xfer_level_reg[3] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_xfer_level_reg[2] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_xfer_level_reg[1] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_xfer_level_reg[0] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/d_r_gray_reg[5] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/d_r_gray_reg[4] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/d_r_gray_reg[3] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/d_r_gray_reg[2] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/d_r_gray_reg[1] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/d_r_gray_reg[0] ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[0].util_sync_flops/s0_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[0].util_sync_flops/s1_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[1].util_sync_flops/s0_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[1].util_sync_flops/s1_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[2].util_sync_flops/s0_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[2].util_sync_flops/s1_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[3].util_sync_flops/s0_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[3].util_sync_flops/s1_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[4].util_sync_flops/s0_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[4].util_sync_flops/s1_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[5].util_sync_flops/s0_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\sync_c_wr_rd_addr/util_sync_gray/gen_util_sync_flops[5].util_sync_flops/s1_reg ) is unused and will be removed from module be_dc_fifo_shallow_ram__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[55] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[54] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[53] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[52] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[51] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[50] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\hold_data_reg[49] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[55] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[54] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[53] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[52] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[51] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[50] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[49] ) is unused and will be removed from module be_tiny_fifo_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[4] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[3] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[2] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[1] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[0] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[54] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[53] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[52] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[51] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[50] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[49] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[48] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[47] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[46] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[45] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\out_data_reg[44] ) is unused and will be removed from module util_reg__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[4] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[3] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[2] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[1] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (\wr_level_reg[0] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (wr_full_reg) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (r_wr_en_reg) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (\rd_level_reg[4] ) is unused and will be removed from module be_sc_fifo_shallow_ram__parameterized3__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition target_axi__parameterized0__GB0
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition c2s_dma_engine_pkt
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition c2s_axi_if__GBM0
+Optimizing partition c2s_axi_if__GBM1
+Optimizing partition c2s_axi_if__GBM3
+Optimizing partition cpl_reorder_queue_pkt__GB0
+Optimizing partition cpl_reorder_queue_pkt__GB2
+Optimizing partition cpl_reorder_queue_pkt__GB3
+Optimizing partition cpl_reorder_queue_pkt__GB5
+Optimizing partition cpl_reorder_queue_pkt__GB6
+Optimizing partition cpl_reorder_queue_pkt__GB7
+Optimizing partition s2c_axi_if
+Optimizing partition dma_back_end_axi__GCB0
+Optimizing partition dma_back_end_axi__GCB1
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Optimizing partition dma_back_end_axi__GCB2
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:00 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 3790 ; free virtual = 21407
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:48 ; elapsed = 00:02:00 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 3790 ; free virtual = 21407
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |target_axi__GB0                  |           1|     17872|
+|2     |target_axi__GB1                  |           1|       200|
+|3     |target_axi__parameterized0__GB0  |           1|     17994|
+|4     |target_axi__parameterized0__GB1  |           1|       317|
+|5     |target_axi__parameterized0__GB2  |           1|       958|
+|6     |c2s_dma_engine_pkt               |           4|      8589|
+|7     |c2s_axi_if__GBM0                 |           4|      8397|
+|8     |c2s_axi_if__GBM1                 |           4|      3560|
+|9     |c2s_axi_if__GBM2                 |           4|       196|
+|10    |c2s_axi_if__GBM3                 |           4|      4735|
+|11    |c2s_dma_axi__GC0                 |           1|      3242|
+|12    |c2s_dma_axi__parameterized0__GC0 |           1|      3249|
+|13    |c2s_dma_axi__parameterized1__GC0 |           1|      3249|
+|14    |c2s_dma_axi__parameterized2__GC0 |           1|      3250|
+|15    |cpl_reorder_queue_pkt__GB0       |           4|     11957|
+|16    |muxpart__387                     |           4|      2490|
+|17    |cpl_reorder_queue_pkt__GB2       |           4|      4981|
+|18    |cpl_reorder_queue_pkt__GB3       |           4|      9428|
+|19    |cpl_reorder_queue_pkt__GB4       |           4|      2730|
+|20    |cpl_reorder_queue_pkt__GB5       |           4|      7245|
+|21    |cpl_reorder_queue_pkt__GB6       |           4|      5846|
+|22    |cpl_reorder_queue_pkt__GB7       |           4|      5995|
+|23    |cpl_reorder_queue_pkt__GB8       |           4|      1134|
+|24    |cpl_reorder_queue_pkt__GB9       |           4|       506|
+|25    |s2c_tx_pkt__GC0                  |           4|      1069|
+|26    |s2c_dma_engine_pkt__GCM0         |           4|      3595|
+|27    |s2c_axi_if                       |           4|      7737|
+|28    |s2c_dma_axi__GC0                 |           1|      2959|
+|29    |s2c_dma_axi__parameterized0__GC0 |           1|      2967|
+|30    |s2c_dma_axi__parameterized1__GC0 |           1|      2967|
+|31    |s2c_dma_axi__parameterized2__GC0 |           1|      2960|
+|32    |dma_back_end_axi__GCB0           |           1|     18297|
+|33    |dma_back_end_axi__GCB1           |           1|      9569|
+|34    |dma_back_end_axi__GCB2           |           1|     10913|
++------+---------------------------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:48 ; elapsed = 00:02:00 . Memory (MB): peak = 2216.609 ; gain = 1459.441 ; free physical = 3790 ; free virtual = 21407
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:57 ; elapsed = 00:02:09 . Memory (MB): peak = 2275.605 ; gain = 1518.438 ; free physical = 3712 ; free virtual = 21329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:31 ; elapsed = 00:02:44 . Memory (MB): peak = 2402.367 ; gain = 1645.199 ; free physical = 3579 ; free virtual = 21202
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |target_axi__GB0                  |           1|      5755|
+|2     |target_axi__GB1                  |           1|       130|
+|3     |target_axi__parameterized0__GB0  |           1|     16822|
+|4     |target_axi__parameterized0__GB1  |           1|       279|
+|5     |target_axi__parameterized0__GB2  |           1|       958|
+|6     |c2s_dma_engine_pkt               |           4|      6977|
+|7     |c2s_axi_if__GBM0                 |           2|      8397|
+|8     |c2s_axi_if__GBM1                 |           4|      3560|
+|9     |c2s_axi_if__GBM2                 |           4|       196|
+|10    |c2s_axi_if__GBM3                 |           2|      4735|
+|11    |c2s_dma_axi__GC0                 |           1|      2960|
+|12    |c2s_dma_axi__parameterized0__GC0 |           1|      2967|
+|13    |c2s_dma_axi__parameterized1__GC0 |           1|      2967|
+|14    |c2s_dma_axi__parameterized2__GC0 |           1|      2968|
+|15    |cpl_reorder_queue_pkt__GB0       |           4|     11957|
+|16    |muxpart__387                     |           4|      2482|
+|17    |cpl_reorder_queue_pkt__GB2       |           4|      4965|
+|18    |cpl_reorder_queue_pkt__GB3       |           4|      9412|
+|19    |cpl_reorder_queue_pkt__GB4       |           4|      2730|
+|20    |cpl_reorder_queue_pkt__GB5       |           4|      7245|
+|21    |cpl_reorder_queue_pkt__GB6       |           4|      5648|
+|22    |cpl_reorder_queue_pkt__GB7       |           4|      5992|
+|23    |cpl_reorder_queue_pkt__GB8       |           4|      1134|
+|24    |cpl_reorder_queue_pkt__GB9       |           4|       471|
+|25    |s2c_tx_pkt__GC0                  |           4|       822|
+|26    |s2c_dma_engine_pkt__GCM0         |           4|      3424|
+|27    |s2c_axi_if                       |           4|      7737|
+|28    |s2c_dma_axi__GC0                 |           1|      2948|
+|29    |s2c_dma_axi__parameterized0__GC0 |           1|      2957|
+|30    |s2c_dma_axi__parameterized1__GC0 |           1|      2957|
+|31    |s2c_dma_axi__parameterized2__GC0 |           1|      2948|
+|32    |dma_back_end_axi__GCB0           |           1|     12273|
+|33    |dma_back_end_axi__GCB1           |           1|      8250|
+|34    |dma_back_end_axi__GCB2           |           1|     10421|
+|35    |dma_back_end_axi_GT0             |           1|     13132|
+|36    |dma_back_end_axi_GT0__1          |           1|     13132|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:02 ; elapsed = 00:04:16 . Memory (MB): peak = 2666.887 ; gain = 1909.719 ; free physical = 3341 ; free virtual = 20959
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop gen_c2s_dma[0].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9] is being inverted and renamed to gen_c2s_dma[0].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9]_inv.
+INFO: [Synth 8-5365] Flop gen_c2s_dma[1].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9] is being inverted and renamed to gen_c2s_dma[1].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9]_inv.
+INFO: [Synth 8-5365] Flop gen_c2s_dma[2].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9] is being inverted and renamed to gen_c2s_dma[2].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9]_inv.
+INFO: [Synth 8-5365] Flop gen_c2s_dma[3].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9] is being inverted and renamed to gen_c2s_dma[3].gen_c2s_dma_axi.c2s_dma_axi/c2s_dma_engine_pkt/data_if_pkt/i1_payload_max_bcount_reg[9]_inv.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [15]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [14]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[14] [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[14] [1]. Fanout reduced from 339 to 58 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[14] [2]. Fanout reduced from 355 to 60 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[14] [3]. Fanout reduced from 174 to 59 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[14] [4]. Fanout reduced from 94 to 44 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[15] [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[15] [1]. Fanout reduced from 339 to 58 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[15] [2]. Fanout reduced from 355 to 60 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[15] [3]. Fanout reduced from 174 to 59 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[15] [4]. Fanout reduced from 94 to 44 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[9] [3]. Fanout reduced from 475 to 61 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[9] [0]. Fanout reduced from 538 to 61 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[9] [1]. Fanout reduced from 523 to 59 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[9] [2]. Fanout reduced from 523 to 59 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[9] [4]. Fanout reduced from 291 to 54 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [9]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[10] [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[10] [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[10] [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[10] [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[10] [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [10]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[11] [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[11] [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[11] [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[11] [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[11] [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [11]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[8] [3]. Fanout reduced from 174 to 59 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[8] [4]. Fanout reduced from 94 to 44 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[8] [1]. Fanout reduced from 339 to 58 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[8] [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[8] [2]. Fanout reduced from 355 to 60 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [8]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[13] [3]. Fanout reduced from 475 to 61 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[13] [0]. Fanout reduced from 538 to 61 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[13] [1]. Fanout reduced from 523 to 59 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[13] [2]. Fanout reduced from 523 to 59 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[13] [4]. Fanout reduced from 291 to 54 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [13]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[12] [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[12] [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[12] [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[12] [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[12] [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [12]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[7] [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[7] [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[7] [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[7] [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[7] [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [7]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[0]__0 [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[0]__0 [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[0]__0 [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[0]__0 [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[0]__0 [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [0]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[1]__0 [4]. Fanout reduced from 94 to 44 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[1]__0 [3]. Fanout reduced from 174 to 59 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[1]__0 [1]. Fanout reduced from 339 to 58 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[1]__0 [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[1]__0 [2]. Fanout reduced from 355 to 60 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [1]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[2]__0 [4]. Fanout reduced from 94 to 44 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[2]__0 [3]. Fanout reduced from 174 to 59 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[2]__0 [1]. Fanout reduced from 339 to 58 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[2]__0 [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[2]__0 [2]. Fanout reduced from 355 to 60 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [2]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[3]__0 [4]. Fanout reduced from 94 to 44 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[3]__0 [3]. Fanout reduced from 174 to 59 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[3]__0 [1]. Fanout reduced from 339 to 58 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[3]__0 [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[3]__0 [2]. Fanout reduced from 355 to 60 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [3]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[4]__0 [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[4]__0 [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[4]__0 [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[4]__0 [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[4]__0 [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [4]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[5] [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[5] [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[5] [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[5] [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[5] [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [5]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[6] [0]. Fanout reduced from 530 to 60 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[6] [2]. Fanout reduced from 508 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[6] [1]. Fanout reduced from 507 to 58 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[6] [4]. Fanout reduced from 283 to 50 by creating 5 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[6] [3]. Fanout reduced from 452 to 58 by creating 7 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_last_data_wr_en . Fanout reduced from 571 to 64 by creating 8 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[3].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c [6]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[2].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [15]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[2].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/r_q_wr_en_c__0 [14]. Fanout reduced from 248 to 62 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 64 on net \gen_s2c_dma[2].gen_s2c_dma_axi.s2c_dma_axi/s2c_dma_engine_pkt/s2c_tx_pkt/cpl_reorder_queue_pkt/c2_hold_offset[14] [0]. Fanout reduced from 363 to 62 by creating 5 replicas.
+INFO: [Common 17-14] Message 'Synth 8-4618' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:16 ; elapsed = 00:04:30 . Memory (MB): peak = 2666.887 ; gain = 1909.719 ; free physical = 3340 ; free virtual = 20958
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:17 ; elapsed = 00:04:31 . Memory (MB): peak = 2666.887 ; gain = 1909.719 ; free physical = 3340 ; free virtual = 20958
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:28 ; elapsed = 00:04:43 . Memory (MB): peak = 2666.887 ; gain = 1909.719 ; free physical = 3340 ; free virtual = 20958
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |  1119|
+|2     |LUT1      |  1129|
+|3     |LUT2      | 10451|
+|4     |LUT3      | 22187|
+|5     |LUT4      | 12066|
+|6     |LUT5      | 20674|
+|7     |LUT6      | 71726|
+|8     |MUXCY_L   |  1474|
+|9     |MUXF7     | 10450|
+|10    |MUXF8     |  1107|
+|11    |RAM16X1D  |     5|
+|12    |RAM32M    |   821|
+|13    |RAMB36SDP |    72|
+|14    |XORCY     |  1542|
+|15    |FDCE      | 45858|
+|16    |FDPE      |   335|
+|17    |FDRE      | 49679|
+|18    |FDSE      |   160|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:30 ; elapsed = 00:04:44 . Memory (MB): peak = 2666.887 ; gain = 1909.719 ; free physical = 3340 ; free virtual = 20958
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4760 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:37 ; elapsed = 00:04:15 . Memory (MB): peak = 2670.801 ; gain = 761.566 ; free physical = 5846 ; free virtual = 23464
+Synthesis Optimization Complete : Time (s): cpu = 00:07:14 ; elapsed = 00:04:44 . Memory (MB): peak = 2670.801 ; gain = 1913.633 ; free physical = 5991 ; free virtual = 23467
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5033 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc]
+WARNING: [Constraints 18-633] Creating clock c2s_aclk[3] with 4 sources. [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc:3]
+WARNING: [Constraints 18-633] Creating clock s2c_aclk[3] with 4 sources. [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc:4]
+Finished Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1309 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 411 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 821 instances
+  RAMB36SDP => RAMB36E1: 72 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+478 Infos, 306 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:44 ; elapsed = 00:05:14 . Memory (MB): peak = 2670.801 ; gain = 1821.336 ; free physical = 6142 ; free virtual = 23619
+# rename_ref -prefix_all dma_back_end_axi_
+INFO: [Coretcl 2-1174] Renamed 743 cell refs.
+# write_checkpoint -noxdef dma_back_end_axi.dcp
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2674.895 ; gain = 4.094 ; free physical = 6132 ; free virtual = 23618
+# catch { report_utilization -file dma_back_end_axi_utilization_synth.rpt -pb dma_back_end_axi_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2674.895 ; gain = 0.000 ; free physical = 6132 ; free virtual = 23619
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  1 16:21:56 2017...

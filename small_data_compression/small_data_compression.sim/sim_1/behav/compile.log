@@ -1,0 +1,361 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/srl_fifo.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity SRL_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl_funcs.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/coregen_comp_defs.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_lite_if.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_lite_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/checkbit_handler_64.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity checkbit_handler_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/checkbit_handler.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity checkbit_handler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/correct_one_bit_64.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity Correct_One_Bit_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/correct_one_bit.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity Correct_One_Bit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/xor18.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity XOR18
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/parity.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity Parity
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/ecc_gen.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity ecc_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/lite_ecc_reg.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity lite_ecc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_lite.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_lite
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/sng_port_arb.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity sng_port_arb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/ua_narrow.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity ua_narrow
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/wrap_brst.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity wrap_brst
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/rd_chnl.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity rd_chnl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/wr_chnl.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity wr_chnl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/full_axi.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity full_axi
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl_top.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_bram_ctrl_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_bram_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/sim/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_pkg_v1_0/hdl/src/vhdl/lib_pkg.vhd" into library lib_pkg_v1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/fifo_generator_v12_0_pkg.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/input_blk.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/output_blk.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/shft_wrapper.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/shft_ram.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/wr_pf_as.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/wr_pf_ss.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/rd_pe_as.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/rd_pe_ss.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/common/synchronizer_ff.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/delay.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/bin_cntr.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/clk_x_pntrs_builtin.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/logic_builtin.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_prim.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_extdepth.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_top.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/reset_builtin.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_prim_v6.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_extdepth_v6.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_extdepth_low_latency.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/builtin_top_v6.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/builtin/fifo_generator_v12_0_builtin.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_builtin
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/ramfifo/bram_sync_reg.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/ramfifo/bram_fifo_rstlogic.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/ramfifo/reset_blk_ramfifo.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/ramfifo/axi_reg_slice.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/fifo_generator_top_bi_sim.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/fifo_generator_v12_0_synth.vhd" into library fifo_generator_v12_0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v12_0_synth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_fifo_v1_0/hdl/src/vhdl/async_fifo_fg.vhd" into library lib_fifo_v1_0
+INFO: [VRFC 10-307] analyzing entity async_fifo_fg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_fifo_v1_0/hdl/src/vhdl/sync_fifo_fg.vhd" into library lib_fifo_v1_0
+INFO: [VRFC 10-307] analyzing entity sync_fifo_fg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_srl_fifo_v1_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd" into library lib_srl_fifo_v1_0
+INFO: [VRFC 10-307] analyzing entity cntr_incr_decr_addn_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_srl_fifo_v1_0/hdl/src/vhdl/dynshreg_f.vhd" into library lib_srl_fifo_v1_0
+INFO: [VRFC 10-307] analyzing entity dynshreg_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd" into library lib_srl_fifo_v1_0
+INFO: [VRFC 10-307] analyzing entity srl_fifo_rbu_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_f.vhd" into library lib_srl_fifo_v1_0
+INFO: [VRFC 10-307] analyzing entity srl_fifo_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd" into library lib_cdc_v1_0
+INFO: [VRFC 10-307] analyzing entity cdc_sync
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_reset.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_afifo_autord.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_afifo_autord
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_sfifo_autord.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_sfifo_autord
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_fifo.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_cmd_status.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_cmd_status
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_scc.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_scc
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_strb_gen2.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_strb_gen2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_pcc.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_pcc
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_addr_cntl.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_addr_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rdmux.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_rdmux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rddata_cntl.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_rddata_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rd_status_cntl.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_rd_status_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_demux.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_wr_demux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wrdata_cntl.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_wrdata_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_status_cntl.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_wr_status_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_skid2mm_buf.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_skid2mm_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_skid_buf.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_skid_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rd_sf.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_rd_sf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_sf.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_wr_sf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_stbs_set.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_stbs_set
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_stbs_set_nodre.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_stbs_set_nodre
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_ibttcc.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_ibttcc
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_indet_btt.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_indet_btt
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux2_1_x_n.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_dre_mux2_1_x_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux4_1_x_n.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_dre_mux4_1_x_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux8_1_x_n.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_dre_mux8_1_x_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_dre.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_mm2s_dre
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_dre.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_s2mm_dre
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_ms_strb_set.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_ms_strb_set
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mssai_skid_buf.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_mssai_skid_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_slice.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_slice
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_scatter.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_s2mm_scatter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_realign.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_s2mm_realign
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_basic_wrap.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_s2mm_basic_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_omit_wrap.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_s2mm_omit_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_full_wrap.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_s2mm_full_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_basic_wrap.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_mm2s_basic_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_omit_wrap.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_mm2s_omit_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_full_wrap.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover_mm2s_full_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover.vhd" into library axi_datamover_v5_1
+INFO: [VRFC 10-307] analyzing entity axi_datamover
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_pkg.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_reset.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_sfifo_autord.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_sfifo_autord
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_afifo_autord.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_afifo_autord
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_fifo.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_cmd_status.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_cmd_status
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_rdmux.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_rdmux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_addr_cntl.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_addr_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_rddata_cntl.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_rddata_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_rd_status_cntl.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_rd_status_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_scc.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_scc
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_wr_demux.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_wr_demux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_scc_wr.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_scc_wr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_skid2mm_buf.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_skid2mm_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_wrdata_cntl.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_wrdata_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_wr_status_cntl.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_wr_status_cntl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_skid_buf.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_skid_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_mm2s_basic_wrap.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_mm2s_basic_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_s2mm_basic_wrap.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_s2mm_basic_wrap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_datamover.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_datamover
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_sm.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_sm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_pntr.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_pntr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_cmdsts_if.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_cmdsts_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_mngr.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_cntrl_strm.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_cntrl_strm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_queue.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_queue
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_noqueue.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_noqueue
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_ftch_q_mngr.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_ftch_q_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_updt_cmdsts_if.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_updt_cmdsts_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_updt_sm.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_updt_sm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_updt_mngr.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_updt_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_updt_queue.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_updt_queue
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_updt_noqueue.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_updt_noqueue
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_updt_q_mngr.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_updt_q_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg_intrpt.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg_intrpt
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_sg_v4_1/hdl/src/vhdl/axi_sg.vhd" into library axi_sg_v4_1
+INFO: [VRFC 10-307] analyzing entity axi_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_pkg.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_reset.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_rst_module.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_rst_module
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_lite_if.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_lite_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_register.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_register
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_register_s2mm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_register_s2mm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_reg_module.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_reg_module
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_skid_buf.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_skid_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_afifo_autord.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_afifo_autord
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_sofeof_gen.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_sofeof_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_smple_sm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_smple_sm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_mm2s_sg_if.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_mm2s_sg_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_mm2s_sm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_mm2s_sm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_mm2s_cmdsts_if.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_mm2s_cmdsts_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_mm2s_sts_mngr.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_mm2s_sts_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_mm2s_cntrl_strm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_mm2s_cntrl_strm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_mm2s_mngr.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_mm2s_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm_sg_if.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm_sg_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm_sm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm_sm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm_cmdsts_if.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm_cmdsts_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm_sts_mngr.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm_sts_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm_sts_strm.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm_sts_strm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_s2mm_mngr.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_s2mm_mngr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma_cmd_split.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma_cmd_split
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/axi_dma_v7_1/hdl/src/vhdl/axi_dma.vhd" into library axi_dma_v7_1
+INFO: [VRFC 10-307] analyzing entity axi_dma
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/sim/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/srl_fifo.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity SRL_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl_funcs.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/coregen_comp_defs.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_lite_if.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_lite_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/checkbit_handler_64.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity checkbit_handler_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/checkbit_handler.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity checkbit_handler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/correct_one_bit_64.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity Correct_One_Bit_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/correct_one_bit.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity Correct_One_Bit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/xor18.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity XOR18
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/parity.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity Parity
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/ecc_gen.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity ecc_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/lite_ecc_reg.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity lite_ecc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_lite.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_lite
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/sng_port_arb.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity sng_port_arb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/ua_narrow.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity ua_narrow
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/wrap_brst.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity wrap_brst
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/rd_chnl.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity rd_chnl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/wr_chnl.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity wr_chnl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/full_axi.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity full_axi
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl_top.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_bram_ctrl_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl.vhd" into library axi_bram_ctrl_v4_0
+INFO: [VRFC 10-307] analyzing entity axi_bram_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/sim/sg_bram_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sg_bram_controller

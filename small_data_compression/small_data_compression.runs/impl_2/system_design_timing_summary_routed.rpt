@@ -1,0 +1,1385 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Wed Sep  6 15:09:37 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file system_design_timing_summary_routed.rpt -rpx system_design_timing_summary_routed.rpx
+| Design       : system_design
+| Device       : 7vx690t-ffg1761
+| Speed File   : -2  PRODUCTION 1.11 2014-03-13
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking unexpandable_clocks
+13. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 4 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 290 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but has a clock definition.
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking unexpandable_clocks
+--------------------------------
+ There are 0 unexpandable clock pairs.
+
+
+13. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.115        0.000                      0                 7842        0.072        0.000                      0                 7842        1.108        0.000                       0                  2872  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+clk    {0.000 1.750}        3.500           285.714         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 0.115        0.000                      0                 7842        0.072        0.000                      0                 7842        1.108        0.000                       0                  2872  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.115ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.072ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        1.108ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.115ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.351ns  (logic 1.584ns (47.267%)  route 1.767ns (52.733%))
+  Logic Levels:           11  (CARRY4=6 LUT4=1 LUT5=2 MUXF7=2)
+  Clock Path Skew:        -0.046ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.945ns = ( 7.445 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.321ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.328     4.321    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/m_axi_mm2s_aclk
+    SLICE_X59Y242                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y242        FDRE (Prop_fdre_C_Q)         0.223     4.544 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/Q
+                         net (fo=71, routed)          0.477     5.021    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_arsize[0]
+    SLICE_X59Y243        LUT4 (Prop_lut4_I0_O)        0.043     5.064 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0/O
+                         net (fo=1, routed)           0.000     5.064    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0
+    SLICE_X59Y243        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259     5.323 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0/CO[3]
+                         net (fo=1, routed)           0.000     5.323    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0
+    SLICE_X59Y244        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.148     5.471 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_40/O[3]
+                         net (fo=7, routed)           0.325     5.796    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW.I_UA_NARROW/size_plus_lsb[7]
+    SLICE_X58Y242        LUT5 (Prop_lut5_I2_O)        0.120     5.916 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0/O
+                         net (fo=1, routed)           0.000     5.916    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0
+    SLICE_X58Y242        MUXF7 (Prop_muxf7_I1_O)      0.103     6.019 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0/O
+                         net (fo=6, routed)           0.474     6.493    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0
+    SLICE_X56Y244        LUT5 (Prop_lut5_I1_O)        0.123     6.616 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0/O
+                         net (fo=1, routed)           0.000     6.616    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0
+    SLICE_X56Y244        CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     6.872 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0/CO[3]
+                         net (fo=1, routed)           0.000     6.872    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0
+    SLICE_X56Y245        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.926 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0/CO[3]
+                         net (fo=1, routed)           0.000     6.926    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0
+    SLICE_X56Y246        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.980 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     6.980    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0
+    SLICE_X56Y247        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.034 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0/CO[3]
+                         net (fo=5, routed)           0.491     7.525    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0
+    SLICE_X57Y247        MUXF7 (Prop_muxf7_S_O)       0.147     7.672 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[0]_i_1__0/O
+                         net (fo=1, routed)           0.000     7.672    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[0]_i_1__0
+    SLICE_X57Y247        FDRE                                         r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.196     7.445    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_aclk
+    SLICE_X57Y247                                                     r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[0]/C
+                         clock pessimism              0.329     7.775    
+                         clock uncertainty           -0.035     7.739    
+    SLICE_X57Y247        FDRE (Setup_fdre_C_D)        0.048     7.787    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[0]
+  -------------------------------------------------------------------
+                         required time                          7.787    
+                         arrival time                          -7.672    
+  -------------------------------------------------------------------
+                         slack                                  0.115    
+
+Slack (MET) :             0.139ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.328ns  (logic 1.600ns (48.081%)  route 1.728ns (51.919%))
+  Logic Levels:           11  (CARRY4=6 LUT4=1 LUT5=2 MUXF7=2)
+  Clock Path Skew:        -0.046ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.945ns = ( 7.445 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.321ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.328     4.321    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/m_axi_mm2s_aclk
+    SLICE_X59Y242                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y242        FDRE (Prop_fdre_C_Q)         0.223     4.544 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/Q
+                         net (fo=71, routed)          0.477     5.021    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_arsize[0]
+    SLICE_X59Y243        LUT4 (Prop_lut4_I0_O)        0.043     5.064 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0/O
+                         net (fo=1, routed)           0.000     5.064    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0
+    SLICE_X59Y243        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259     5.323 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0/CO[3]
+                         net (fo=1, routed)           0.000     5.323    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0
+    SLICE_X59Y244        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.148     5.471 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_40/O[3]
+                         net (fo=7, routed)           0.325     5.796    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW.I_UA_NARROW/size_plus_lsb[7]
+    SLICE_X58Y242        LUT5 (Prop_lut5_I2_O)        0.120     5.916 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0/O
+                         net (fo=1, routed)           0.000     5.916    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0
+    SLICE_X58Y242        MUXF7 (Prop_muxf7_I1_O)      0.103     6.019 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0/O
+                         net (fo=6, routed)           0.474     6.493    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0
+    SLICE_X56Y244        LUT5 (Prop_lut5_I1_O)        0.123     6.616 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0/O
+                         net (fo=1, routed)           0.000     6.616    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0
+    SLICE_X56Y244        CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     6.872 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0/CO[3]
+                         net (fo=1, routed)           0.000     6.872    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0
+    SLICE_X56Y245        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.926 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0/CO[3]
+                         net (fo=1, routed)           0.000     6.926    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0
+    SLICE_X56Y246        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.980 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     6.980    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0
+    SLICE_X56Y247        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.034 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0/CO[3]
+                         net (fo=5, routed)           0.451     7.485    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0
+    SLICE_X57Y248        MUXF7 (Prop_muxf7_S_O)       0.163     7.648 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[2]_i_1__0/O
+                         net (fo=1, routed)           0.000     7.648    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[2]_i_1__0
+    SLICE_X57Y248        FDRE                                         r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.196     7.445    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_aclk
+    SLICE_X57Y248                                                     r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[2]/C
+                         clock pessimism              0.329     7.775    
+                         clock uncertainty           -0.035     7.739    
+    SLICE_X57Y248        FDRE (Setup_fdre_C_D)        0.048     7.787    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[2]
+  -------------------------------------------------------------------
+                         required time                          7.787    
+                         arrival time                          -7.648    
+  -------------------------------------------------------------------
+                         slack                                  0.139    
+
+Slack (MET) :             0.154ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.313ns  (logic 1.600ns (48.298%)  route 1.713ns (51.702%))
+  Logic Levels:           11  (CARRY4=6 LUT4=1 LUT5=2 MUXF7=2)
+  Clock Path Skew:        -0.046ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.945ns = ( 7.445 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.321ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.328     4.321    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/m_axi_mm2s_aclk
+    SLICE_X59Y242                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y242        FDRE (Prop_fdre_C_Q)         0.223     4.544 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/Q
+                         net (fo=71, routed)          0.477     5.021    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_arsize[0]
+    SLICE_X59Y243        LUT4 (Prop_lut4_I0_O)        0.043     5.064 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0/O
+                         net (fo=1, routed)           0.000     5.064    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0
+    SLICE_X59Y243        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259     5.323 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0/CO[3]
+                         net (fo=1, routed)           0.000     5.323    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0
+    SLICE_X59Y244        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.148     5.471 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_40/O[3]
+                         net (fo=7, routed)           0.325     5.796    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW.I_UA_NARROW/size_plus_lsb[7]
+    SLICE_X58Y242        LUT5 (Prop_lut5_I2_O)        0.120     5.916 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0/O
+                         net (fo=1, routed)           0.000     5.916    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0
+    SLICE_X58Y242        MUXF7 (Prop_muxf7_I1_O)      0.103     6.019 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0/O
+                         net (fo=6, routed)           0.474     6.493    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0
+    SLICE_X56Y244        LUT5 (Prop_lut5_I1_O)        0.123     6.616 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0/O
+                         net (fo=1, routed)           0.000     6.616    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0
+    SLICE_X56Y244        CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     6.872 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0/CO[3]
+                         net (fo=1, routed)           0.000     6.872    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0
+    SLICE_X56Y245        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.926 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0/CO[3]
+                         net (fo=1, routed)           0.000     6.926    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0
+    SLICE_X56Y246        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.980 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     6.980    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0
+    SLICE_X56Y247        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.034 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0/CO[3]
+                         net (fo=5, routed)           0.436     7.470    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0
+    SLICE_X57Y245        MUXF7 (Prop_muxf7_S_O)       0.163     7.633 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_1__0/O
+                         net (fo=1, routed)           0.000     7.633    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_1__0
+    SLICE_X57Y245        FDRE                                         r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.196     7.445    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_aclk
+    SLICE_X57Y245                                                     r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]/C
+                         clock pessimism              0.329     7.775    
+                         clock uncertainty           -0.035     7.739    
+    SLICE_X57Y245        FDRE (Setup_fdre_C_D)        0.048     7.787    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]
+  -------------------------------------------------------------------
+                         required time                          7.787    
+                         arrival time                          -7.633    
+  -------------------------------------------------------------------
+                         slack                                  0.154    
+
+Slack (MET) :             0.157ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[116]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.205ns  (logic 0.302ns (9.422%)  route 2.903ns (90.578%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.135ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.945ns = ( 7.445 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.324ns
+    Clock Pessimism Removal (CPR):    0.243ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.331     4.324    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X56Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y245        FDRE (Prop_fdre_C_Q)         0.259     4.583 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/Q
+                         net (fo=580, routed)         2.903     7.486    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup
+    SLICE_X51Y251        LUT3 (Prop_lut3_I1_O)        0.043     7.529 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[116]_i_1/O
+                         net (fo=1, routed)           0.000     7.529    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[116]
+    SLICE_X51Y251        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[116]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.196     7.445    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X51Y251                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[116]/C
+                         clock pessimism              0.243     7.689    
+                         clock uncertainty           -0.035     7.653    
+    SLICE_X51Y251        FDRE (Setup_fdre_C_D)        0.033     7.686    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[116]
+  -------------------------------------------------------------------
+                         required time                          7.686    
+                         arrival time                          -7.529    
+  -------------------------------------------------------------------
+                         slack                                  0.157    
+
+Slack (MET) :             0.163ns  (required time - arrival time)
+  Source:                 wbram/w_addr_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dout_bram/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[10]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        2.736ns  (logic 0.223ns (8.152%)  route 2.513ns (91.848%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.150ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.943ns = ( 7.443 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.337ns
+    Clock Pessimism Removal (CPR):    0.243ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.344     4.337    wbram/clk_IBUF_BUFG
+    SLICE_X49Y237                                                     r  wbram/w_addr_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y237        FDCE (Prop_fdce_C_Q)         0.223     4.560 r  wbram/w_addr_reg[5]/Q
+                         net (fo=10, routed)          2.513     7.072    dout_bram/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/addra[5]
+    RAMB36_X4Y54         RAMB36E1                                     r  dout_bram/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.194     7.443    dout_bram/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/clka
+    RAMB36_X4Y54                                                      r  dout_bram/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.243     7.686    
+                         clock uncertainty           -0.035     7.651    
+    RAMB36_X4Y54         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[10])
+                                                     -0.416     7.235    dout_bram/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                          7.235    
+                         arrival time                          -7.072    
+  -------------------------------------------------------------------
+                         slack                                  0.163    
+
+Slack (MET) :             0.163ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[112]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.200ns  (logic 0.302ns (9.437%)  route 2.898ns (90.563%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.135ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.945ns = ( 7.445 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.324ns
+    Clock Pessimism Removal (CPR):    0.243ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.331     4.324    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X56Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y245        FDRE (Prop_fdre_C_Q)         0.259     4.583 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/Q
+                         net (fo=580, routed)         2.898     7.481    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup
+    SLICE_X51Y251        LUT3 (Prop_lut3_I1_O)        0.043     7.524 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[112]_i_1/O
+                         net (fo=1, routed)           0.000     7.524    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[112]
+    SLICE_X51Y251        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[112]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.196     7.445    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X51Y251                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[112]/C
+                         clock pessimism              0.243     7.689    
+                         clock uncertainty           -0.035     7.653    
+    SLICE_X51Y251        FDRE (Setup_fdre_C_D)        0.034     7.687    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[112]
+  -------------------------------------------------------------------
+                         required time                          7.687    
+                         arrival time                          -7.524    
+  -------------------------------------------------------------------
+                         slack                                  0.163    
+
+Slack (MET) :             0.174ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[78]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.272ns  (logic 0.302ns (9.230%)  route 2.970ns (90.770%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.053ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.941ns = ( 7.441 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.324ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.331     4.324    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X56Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y245        FDRE (Prop_fdre_C_Q)         0.259     4.583 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/Q
+                         net (fo=580, routed)         2.970     7.553    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup
+    SLICE_X55Y233        LUT3 (Prop_lut3_I1_O)        0.043     7.596 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[78]_i_1/O
+                         net (fo=1, routed)           0.000     7.596    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[78]
+    SLICE_X55Y233        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[78]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.192     7.441    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y233                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[78]/C
+                         clock pessimism              0.329     7.771    
+                         clock uncertainty           -0.035     7.735    
+    SLICE_X55Y233        FDRE (Setup_fdre_C_D)        0.034     7.769    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[78]
+  -------------------------------------------------------------------
+                         required time                          7.769    
+                         arrival time                          -7.596    
+  -------------------------------------------------------------------
+                         slack                                  0.174    
+
+Slack (MET) :             0.175ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[85]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.271ns  (logic 0.302ns (9.233%)  route 2.969ns (90.767%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.053ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.941ns = ( 7.441 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.324ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.331     4.324    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X56Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y245        FDRE (Prop_fdre_C_Q)         0.259     4.583 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/Q
+                         net (fo=580, routed)         2.969     7.552    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup
+    SLICE_X55Y233        LUT3 (Prop_lut3_I1_O)        0.043     7.595 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[85]_i_1/O
+                         net (fo=1, routed)           0.000     7.595    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[85]
+    SLICE_X55Y233        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[85]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.192     7.441    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y233                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[85]/C
+                         clock pessimism              0.329     7.771    
+                         clock uncertainty           -0.035     7.735    
+    SLICE_X55Y233        FDRE (Setup_fdre_C_D)        0.034     7.769    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[85]
+  -------------------------------------------------------------------
+                         required time                          7.769    
+                         arrival time                          -7.595    
+  -------------------------------------------------------------------
+                         slack                                  0.175    
+
+Slack (MET) :             0.178ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.270ns  (logic 0.302ns (9.236%)  route 2.968ns (90.764%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.943ns = ( 7.443 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.324ns
+    Clock Pessimism Removal (CPR):    0.329ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.331     4.324    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X56Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y245        FDRE (Prop_fdre_C_Q)         0.259     4.583 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup_reg/Q
+                         net (fo=580, routed)         2.968     7.551    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_s_ready_dup
+    SLICE_X53Y235        LUT3 (Prop_lut3_I1_O)        0.043     7.594 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[9]_i_1/O
+                         net (fo=1, routed)           0.000     7.594    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[9]
+    SLICE_X53Y235        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.194     7.443    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X53Y235                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[9]/C
+                         clock pessimism              0.329     7.773    
+                         clock uncertainty           -0.035     7.737    
+    SLICE_X53Y235        FDRE (Setup_fdre_C_D)        0.034     7.771    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[9]
+  -------------------------------------------------------------------
+                         required time                          7.771    
+                         arrival time                          -7.594    
+  -------------------------------------------------------------------
+                         slack                                  0.178    
+
+Slack (MET) :             0.179ns  (required time - arrival time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.500ns  (clk rise@3.500ns - clk rise@0.000ns)
+  Data Path Delay:        3.338ns  (logic 1.591ns (47.665%)  route 1.747ns (52.335%))
+  Logic Levels:           11  (CARRY4=6 LUT4=1 LUT5=2 MUXF7=2)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.943ns = ( 7.443 - 3.500 ) 
+    Source Clock Delay      (SCD):    4.321ns
+    Clock Pessimism Removal (CPR):    0.353ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.628     0.628 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.272     2.900    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     2.993 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.328     4.321    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/m_axi_mm2s_aclk
+    SLICE_X59Y242                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y242        FDRE (Prop_fdre_C_Q)         0.223     4.544 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[0]/Q
+                         net (fo=71, routed)          0.477     5.021    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_arsize[0]
+    SLICE_X59Y243        LUT4 (Prop_lut4_I0_O)        0.043     5.064 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0/O
+                         net (fo=1, routed)           0.000     5.064    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_25__0
+    SLICE_X59Y243        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259     5.323 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0/CO[3]
+                         net (fo=1, routed)           0.000     5.323    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_16__0
+    SLICE_X59Y244        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.148     5.471 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_40/O[3]
+                         net (fo=7, routed)           0.325     5.796    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW.I_UA_NARROW/size_plus_lsb[7]
+    SLICE_X58Y242        LUT5 (Prop_lut5_I2_O)        0.120     5.916 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0/O
+                         net (fo=1, routed)           0.000     5.916    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[3]_i_15__0
+    SLICE_X58Y242        MUXF7 (Prop_muxf7_I1_O)      0.103     6.019 f  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0/O
+                         net (fo=6, routed)           0.474     6.493    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_9__0
+    SLICE_X56Y244        LUT5 (Prop_lut5_I1_O)        0.123     6.616 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0/O
+                         net (fo=1, routed)           0.000     6.616    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int[4]_i_46__0
+    SLICE_X56Y244        CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     6.872 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0/CO[3]
+                         net (fo=1, routed)           0.000     6.872    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_25__0
+    SLICE_X56Y245        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.926 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0/CO[3]
+                         net (fo=1, routed)           0.000     6.926    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_13__0
+    SLICE_X56Y246        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.980 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     6.980    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_5__0
+    SLICE_X56Y247        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.034 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0/CO[3]
+                         net (fo=5, routed)           0.470     7.504    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[4]_i_2__0
+    SLICE_X58Y247        MUXF7 (Prop_muxf7_S_O)       0.154     7.658 r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_1__0/O
+                         net (fo=1, routed)           0.000     7.658    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/n_0_GEN_NARROW_CNT.narrow_addr_int_reg[3]_i_1__0
+    SLICE_X58Y247        FDRE                                         r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        3.500     3.500 r  
+    AU28                                              0.000     3.500 r  clk
+                         net (fo=0)                   0.000     3.500    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.521     4.021 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.145     6.166    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     6.249 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        1.194     7.443    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/s_axi_aclk
+    SLICE_X58Y247                                                     r  controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]/C
+                         clock pessimism              0.353     7.797    
+                         clock uncertainty           -0.035     7.761    
+    SLICE_X58Y247        FDRE (Setup_fdre_C_D)        0.076     7.837    controller/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[3]
+  -------------------------------------------------------------------
+                         required time                          7.837    
+                         arrival time                          -7.658    
+  -------------------------------------------------------------------
+                         slack                                  0.179    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.072ns  (arrival time - required time)
+  Source:                 dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[47]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][15]_srl16/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.203ns  (logic 0.107ns (52.591%)  route 0.096ns (47.409%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.323ns
+    Source Clock Delay      (SCD):    1.875ns
+    Clock Pessimism Removal (CPR):    0.432ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.648     1.875    dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/m_axi_sg_aclk
+    SLICE_X44Y239                                                     r  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y239        FDRE (Prop_fdre_C_Q)         0.107     1.982 r  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[47]/Q
+                         net (fo=1, routed)           0.096     2.079    dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/m_axis_mm2s_ftch_tdata_new[15]
+    SLICE_X44Y240        SRL16E                                       r  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][15]_srl16/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.853     2.323    dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/m_axi_sg_aclk
+    SLICE_X44Y240                                                     r  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][15]_srl16/CLK
+                         clock pessimism             -0.432     1.890    
+    SLICE_X44Y240        SRL16E (Hold_srl16e_CLK_D)
+                                                      0.116     2.006    dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][15]_srl16
+  -------------------------------------------------------------------
+                         required time                         -2.006    
+                         arrival time                           2.079    
+  -------------------------------------------------------------------
+                         slack                                  0.072    
+
+Slack (MET) :             0.084ns  (arrival time - required time)
+  Source:                 dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.reg1_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.154ns  (logic 0.100ns (65.134%)  route 0.054ns (34.866%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.324ns
+    Source Clock Delay      (SCD):    1.878ns
+    Clock Pessimism Removal (CPR):    0.434ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.651     1.878    dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/m_axi_sg_aclk
+    SLICE_X37Y240                                                     r  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.reg1_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y240        FDRE (Prop_fdre_C_Q)         0.100     1.978 r  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.reg1_reg[2]/Q
+                         net (fo=1, routed)           0.054     2.032    dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/reg1[2]
+    SLICE_X36Y240        FDRE                                         r  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.854     2.324    dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/m_axi_sg_aclk
+    SLICE_X36Y240                                                     r  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[2]/C
+                         clock pessimism             -0.434     1.889    
+    SLICE_X36Y240        FDRE (Hold_fdre_C_D)         0.059     1.948    dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/GEN_MM2S.queue_dout_new_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.948    
+                         arrival time                           2.032    
+  -------------------------------------------------------------------
+                         slack                                  0.084    
+
+Slack (MET) :             0.084ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.182ns  (logic 0.128ns (70.512%)  route 0.054ns (29.488%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.277ns
+    Source Clock Delay      (SCD):    1.832ns
+    Clock Pessimism Removal (CPR):    0.433ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.605     1.832    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y237                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y237        FDRE (Prop_fdre_C_Q)         0.100     1.932 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg_reg[31]/Q
+                         net (fo=1, routed)           0.054     1.986    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg[31]
+    SLICE_X54Y237        LUT4 (Prop_lut4_I3_O)        0.028     2.014 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out[31]_i_1/O
+                         net (fo=1, routed)           0.000     2.014    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_mux_out[31]
+    SLICE_X54Y237        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.807     2.277    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X54Y237                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[31]/C
+                         clock pessimism             -0.433     1.843    
+    SLICE_X54Y237        FDRE (Hold_fdre_C_D)         0.087     1.930    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -1.930    
+                         arrival time                           2.014    
+  -------------------------------------------------------------------
+                         slack                                  0.084    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[245]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[245]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.183ns  (logic 0.128ns (70.126%)  route 0.055ns (29.875%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.280ns
+    Source Clock Delay      (SCD):    1.830ns
+    Clock Pessimism Removal (CPR):    0.438ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.603     1.830    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X51Y263                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[245]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y263        FDRE (Prop_fdre_C_Q)         0.100     1.930 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[245]/Q
+                         net (fo=1, routed)           0.055     1.985    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg[245]
+    SLICE_X50Y263        LUT3 (Prop_lut3_I2_O)        0.028     2.013 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[245]_i_1/O
+                         net (fo=1, routed)           0.000     2.013    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[245]
+    SLICE_X50Y263        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[245]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.810     2.280    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X50Y263                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[245]/C
+                         clock pessimism             -0.438     1.841    
+    SLICE_X50Y263        FDRE (Hold_fdre_C_D)         0.087     1.928    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[245]
+  -------------------------------------------------------------------
+                         required time                         -1.928    
+                         arrival time                           2.013    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[206]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[206]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.183ns  (logic 0.128ns (70.125%)  route 0.055ns (29.875%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.272ns
+    Source Clock Delay      (SCD):    1.821ns
+    Clock Pessimism Removal (CPR):    0.439ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.594     1.821    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X53Y256                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[206]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y256        FDRE (Prop_fdre_C_Q)         0.100     1.921 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[206]/Q
+                         net (fo=1, routed)           0.055     1.976    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg[206]
+    SLICE_X52Y256        LUT3 (Prop_lut3_I2_O)        0.028     2.004 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[206]_i_1/O
+                         net (fo=1, routed)           0.000     2.004    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[206]
+    SLICE_X52Y256        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[206]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.802     2.272    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X52Y256                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[206]/C
+                         clock pessimism             -0.439     1.832    
+    SLICE_X52Y256        FDRE (Hold_fdre_C_D)         0.087     1.919    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[206]
+  -------------------------------------------------------------------
+                         required time                         -1.919    
+                         arrival time                           2.004    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[217]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[217]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.183ns  (logic 0.128ns (70.126%)  route 0.055ns (29.875%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.271ns
+    Source Clock Delay      (SCD):    1.820ns
+    Clock Pessimism Removal (CPR):    0.439ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.593     1.820    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y259                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[217]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y259        FDRE (Prop_fdre_C_Q)         0.100     1.920 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[217]/Q
+                         net (fo=1, routed)           0.055     1.975    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg[217]
+    SLICE_X54Y259        LUT3 (Prop_lut3_I2_O)        0.028     2.003 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[217]_i_1/O
+                         net (fo=1, routed)           0.000     2.003    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[217]
+    SLICE_X54Y259        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[217]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.801     2.271    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X54Y259                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[217]/C
+                         clock pessimism             -0.439     1.831    
+    SLICE_X54Y259        FDRE (Hold_fdre_C_D)         0.087     1.918    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[217]
+  -------------------------------------------------------------------
+                         required time                         -1.918    
+                         arrival time                           2.003    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[57]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[57]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.183ns  (logic 0.128ns (70.125%)  route 0.055ns (29.875%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.275ns
+    Source Clock Delay      (SCD):    1.831ns
+    Clock Pessimism Removal (CPR):    0.432ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.604     1.831    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y234                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[57]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y234        FDRE (Prop_fdre_C_Q)         0.100     1.931 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[57]/Q
+                         net (fo=1, routed)           0.055     1.986    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg[57]
+    SLICE_X54Y234        LUT3 (Prop_lut3_I2_O)        0.028     2.014 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[57]_i_1/O
+                         net (fo=1, routed)           0.000     2.014    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[57]
+    SLICE_X54Y234        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[57]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.805     2.275    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X54Y234                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[57]/C
+                         clock pessimism             -0.432     1.842    
+    SLICE_X54Y234        FDRE (Hold_fdre_C_D)         0.087     1.929    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[57]
+  -------------------------------------------------------------------
+                         required time                         -1.929    
+                         arrival time                           2.014    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.183ns  (logic 0.128ns (70.125%)  route 0.055ns (29.875%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.279ns
+    Source Clock Delay      (SCD):    1.833ns
+    Clock Pessimism Removal (CPR):    0.434ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.606     1.833    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y238                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y238        FDRE (Prop_fdre_C_Q)         0.100     1.933 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg_reg[29]/Q
+                         net (fo=1, routed)           0.055     1.988    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_reg[29]
+    SLICE_X54Y238        LUT4 (Prop_lut4_I3_O)        0.028     2.016 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out[29]_i_1/O
+                         net (fo=1, routed)           0.000     2.016    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_skid_mux_out[29]
+    SLICE_X54Y238        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.809     2.279    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X54Y238                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[29]/C
+                         clock pessimism             -0.434     1.844    
+    SLICE_X54Y238        FDRE (Hold_fdre_C_D)         0.087     1.931    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_strb_reg_out_reg[29]
+  -------------------------------------------------------------------
+                         required time                         -1.931    
+                         arrival time                           2.016    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.086ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[99]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[99]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.184ns  (logic 0.128ns (69.743%)  route 0.056ns (30.257%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.281ns
+    Source Clock Delay      (SCD):    1.835ns
+    Clock Pessimism Removal (CPR):    0.434ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.608     1.835    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X55Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[99]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y245        FDRE (Prop_fdre_C_Q)         0.100     1.935 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg_reg[99]/Q
+                         net (fo=1, routed)           0.056     1.991    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_reg[99]
+    SLICE_X54Y245        LUT3 (Prop_lut3_I2_O)        0.028     2.019 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out[99]_i_1/O
+                         net (fo=1, routed)           0.000     2.019    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_skid_mux_out[99]
+    SLICE_X54Y245        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[99]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.811     2.281    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X54Y245                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[99]/C
+                         clock pessimism             -0.434     1.846    
+    SLICE_X54Y245        FDRE (Hold_fdre_C_D)         0.087     1.933    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[99]
+  -------------------------------------------------------------------
+                         required time                         -1.933    
+                         arrival time                           2.019    
+  -------------------------------------------------------------------
+                         slack                                  0.086    
+
+Slack (MET) :             0.086ns  (arrival time - required time)
+  Source:                 dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_predict_addr_lsh_ireg3_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Destination:            dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_lsh_im0_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.750ns period=3.500ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.184ns  (logic 0.128ns (69.743%)  route 0.056ns (30.257%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.277ns
+    Source Clock Delay      (SCD):    1.832ns
+    Clock Pessimism Removal (CPR):    0.433ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.134     0.134 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.067     1.201    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.227 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.605     1.832    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/m_axi_mm2s_aclk
+    SLICE_X57Y242                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_predict_addr_lsh_ireg3_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y242        FDRE (Prop_fdre_C_Q)         0.100     1.932 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_predict_addr_lsh_ireg3_reg[10]/Q
+                         net (fo=1, routed)           0.056     1.988    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_predict_addr_lsh_ireg3__0[10]
+    SLICE_X56Y242        LUT6 (Prop_lut6_I5_O)        0.028     2.016 r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_lsh_im0[10]_i_1/O
+                         net (fo=1, routed)           0.000     2.016    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/n_0_sig_addr_cntr_lsh_im0[10]_i_1
+    SLICE_X56Y242        FDRE                                         r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_lsh_im0_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AU28                                              0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    AU28                 IBUF (Prop_ibuf_I_O)         0.301     0.301 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.139     1.440    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.470 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2871, routed)        0.807     2.277    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/m_axi_mm2s_aclk
+    SLICE_X56Y242                                                     r  dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_lsh_im0_reg[10]/C
+                         clock pessimism             -0.433     1.843    
+    SLICE_X56Y242        FDRE (Hold_fdre_C_D)         0.087     1.930    dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_lsh_im0_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -1.930    
+                         arrival time                           2.016    
+  -------------------------------------------------------------------
+                         slack                                  0.086    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform:           { 0 1.75 }
+Period:             3.500
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required  Actual  Slack  Location       Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            1.839     3.500   1.661  RAMB18_X4Y96   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            1.839     3.500   1.661  RAMB18_X4Y96   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y47   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y47   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y50   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y50   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y51   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y51   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y49   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            1.839     3.500   1.661  RAMB36_X4Y49   dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X46Y239  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][10]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][11]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][12]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][13]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][14]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][15]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X46Y239  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X46Y239  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X46Y239  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][10]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][11]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][12]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][13]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][14]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][15]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][8]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X44Y240  dma/U0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][9]_srl16/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X40Y231  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_BASIC_WRAPPER/I_WR_STATUS_CNTLR/GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[2][0]_srl3/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.642     1.750   1.108  SLICE_X40Y231  dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_BASIC_WRAPPER/I_WR_STATUS_CNTLR/GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[2][1]_srl3/CLK
+
+
+

@@ -1,0 +1,202 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Thu Sep  7 14:45:04 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : report_drc
+--------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 35
+
+2. REPORT DETAILS
+-----------------
+PORTPROP-2#1 Warning
+selectio_diff_term  
+The port clk_ref_n has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_SSTL15 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#2 Warning
+selectio_diff_term  
+The port clk_ref_p has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_SSTL15 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[0].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#2 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[2].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#3 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[4].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#4 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[6].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#5 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#6 Advisory
+writefirst  
+Synchronous clocking for BRAM (pcie_inst/inst/pcie_top_i/pcie_7vx_i/pcie_bram_7vx_i/req_fifo/U0/RAMB18E1[0].u_fifo) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#7 Advisory
+writefirst  
+Synchronous clocking for BRAM (pcie_inst/inst/pcie_top_i/pcie_7vx_i/pcie_bram_7vx_i/req_fifo/U0/RAMB18E1[1].u_fifo) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#8 Advisory
+writefirst  
+Synchronous clocking for BRAM (pcie_inst/inst/pcie_top_i/pcie_7vx_i/pcie_bram_7vx_i/req_fifo/U0/RAMB18E1[2].u_fifo) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#9 Advisory
+writefirst  
+Synchronous clocking for BRAM (pcie_inst/inst/pcie_top_i/pcie_7vx_i/pcie_bram_7vx_i/req_fifo/U0/RAMB18E1[3].u_fifo) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[0].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[0].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[0].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#4 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[0].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#5 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[2].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#6 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[2].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#7 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[2].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#8 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[2].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#9 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[4].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#10 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[4].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#11 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[4].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#12 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[4].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#13 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[6].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#14 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[6].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#15 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[6].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#16 Advisory
+writefirst  
+Synchronous clocking for BRAM (axis_ic_inst/axis_ic_inst.genblk1[6].axis_ic_rd0_inst/inst/axis_interconnect_0/inst_mi_datapath[0].dynamic_datapath_mi/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_nested.dynamic_datapath_0/gen_data_fifo.axis_data_fifo_0/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#17 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#18 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#19 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#20 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#21 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/sg_bram_inst/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#22 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/sg_bram_inst/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#23 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/sg_bram_inst/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#24 Advisory
+writefirst  
+Synchronous clocking for BRAM (comp_inst/s2c0_compression_inst/inst/sg_bram_inst/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

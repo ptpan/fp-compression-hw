@@ -1,0 +1,137 @@
+2014.3:
+ * Version 14.0
+ * Added new 32-Bit datapath option for the core to provide lower utilization and latency
+ * MDIO Ready is now returned in both the MDIO read data register and the MDIO control register
+ * Updated Statistics to correctly return an AXI slave transaction error (SLVERR) when a write access is attempted
+ * Updated Statistics counters to prevent TX frames smaller than 64 bytes being counted in the 64 byte frame counter
+ * Added a reset synchronizer to the AXI4-Lite reset (s_axi_aresetn) to synchronize it onto the AXI4-Lite clock (s_axi_aclk); this now allows the reset to be driven asynchronously to s_axi_aclk, matching the Product Guide description.
+ * Fix for corner case where an oversized VLAN frame of size 1524 bytes would be incorrectly transmitted without XGMII error codes when the TX configuration is as follows: Jumbo frames and MTU disabled; VLAN enabled; In-band FCS enabled.
+ * Updated example design Transmit FIFO to ensure that the FIFO will not hang when frame sizes larger than the FIFO memory size are sent for transmission.
+ * Updated example design to add a new pattern generator and checker
+ * Updated example design to add a new configuration vector/AXI4-Lite control state machine
+ * Updated demonstration testbench to add BIST mode support
+ * Input port default tie-off values for IP Integrator have been corrected (to be logic 1) for tx_axis_aresetn, rx_axis_aresetn, tx_dcm_locked and rx_dcm_locked
+ * For VHDL projects, the top level VHDL file for the core is now compiled into the default library (named xil_defaultlib unless overridden by the user).  All other core VHDL source remains in the core specific library (ten_gig_eth_mac_v14_0 for this core version).  This makes the core consistent with other Xilinx IP.
+ * Added support for Zync-7000 and 7-Series Defense-grade parts
+
+2014.2:
+ * Version 13.1 (Rev. 1)
+ * Fix for corner case usage of Priority Flow Control on transmit when Oneshot and XON/XOFF are mixed on the same priority.
+
+2014.1:
+ * Version 13.1
+ * Virtex UltraScale Pre-Production support.
+ * Added an option for support of Priority Based Flow Control.
+ * Reduced the transmitter data path latency by 57.6 ns.  This is achieved via a new CRC engine architecture.
+ * Updated Statistics to correctly differentiate between small and fragment frames (AR 59308).
+ * Updated TX Statistics vector to correctly indicate frame size for oversize frames.
+ * Fix for corner case incorrect rx statistics vector bit 27 when runt frame received.
+ * Fix for corner case illegal Control characters before the Start code of a transmitted frame
+ * Fix for corner case illegal IFG before the Start code of a transmitted frame.
+ * Fix for corner case TX frame error due to previous frame being close to the maximum frame size.
+ * Ensured Custom Preamble enable is correctly reset.
+ * Added missing XDC constraints on the MDIO signal inputs to ease timing closure (AR 59891).
+ * Netlists created by write_verilog and write_vhdl are IEEE P1735 encrypted, with keys for supported simulators so that netlist simulation can still be done
+ * Enable third party synthesis tools to read encrypted netlists (but not source HDL)
+ * Enhanced the example design demonstration testbench with a CRC engine. Frames of any size or content can now be generated to stimulate the core.
+ * Removed an unused HDL source file from the core (synchronizer_e.vhd).
+ * Added serialization logic on the tx_statistics_vector and rx_statistics_vector outputs in the example design to reduce the pinout.
+ * Internal device family name change, no functional changes
+
+2013.4:
+ * Version 13.0 (Rev. 1)
+ * Tidied up XDC syntax to use more specific endpoints for some constraints.
+ * Unencrypted core source files are now delivered into the correct library.
+ * Out-of-context XDC file now delivered into synth subdirectory.
+ * Version register now returns the correct value.
+ * Kintex UltraScale Pre-Production support
+
+2013.3:
+ * Version 13.0
+ * Supported Artix-7 parts moved to production.
+ * XDC now delivered with simulation-only license.
+ * Replaced MMCM_BASE primitives with 7-series native MMCM2_BASE primitives.
+ * Added a default case to next state decoding in AXI-Lite slave attachment block.
+ * Use inferred rather than instanced block RAM in the FIFO in the example design.
+ * Change parameters to upper case in example design FIFO files.
+ * Remove BUFG from feedback path in transmit MMCM
+ * Added GUI option to include or exclude shareable logic resources in the core. Please refer to the Product Guide for information and port changes.
+ * Added missing -datapath_only switch to some clock-crossing paths inside the core.
+ * Added missing begin/end to Verilog example design address swap block
+ * Removed the C_BASE_ADDRESS RTL parameter and shrunk AXI4-Lite address bus from 32 bits to 11 bits; address decoding for upper bits is done in AXI-Interconnect core now.
+ * Updated synchronizers for clock domain crossing to reduce Mean Time Between Failures (MTBF) from metastability.
+ * Added support for Cadence IES and Synopsys VCS simulators.
+ * Added support for IP Integrator.
+
+2013.2:
+ * Version 12.0 (Rev. 1)
+ * Virtex-7, Kintex-7 and Zynq-7000 parts moved to production.
+ * VHDL example design - correct wiring of tx_dcm_locked input to physical interface block in example design.
+ * Transmitter now only transmits legal control characters when erroring a frame.
+ * Constraints processing order changed.
+
+2013.1:
+ * Version 12.0
+ * Add support for Zynq xc7z030, xc7z045 and xc7z100 parts.
+ * Changed core hierarchy so that what was previously the "block" level is now the core top level.
+ * Add an XDC file scoped to the core level.
+ * Receive Out Of bounds frames were not being counted in statistics if followed immediately by another frame.
+ * Core XDC constraints file now uses set_max_delay for some internal paths instead of set_false_path.
+ * Added IP-XACT bus definitions for AXI4-Stream, AXI4-Lite, MDIO and XGMII interfaces.
+ * Removed unnecessary 'VCC', 'GND' signals from the example design files 
+ * tx_axis_tuser has changed from a single bit to a vector.
+ * Fixed behavioural simulation of example design.
+ * Fix for receiver marking 12 byte frame as good.
+ * Fix for transmitter hang when sending a 63 byte frame with inband FCS passing.
+ * Fix for minimum IFG following an errored frame.
+ * Remove redundant register on tx_dcm_locked and rx_dcm_locked.
+ * Tidy up unused signals.
+ * Improve reliability after powerup that occasionally caused first frame transmitted to have the incorrect FCS.
+ * Improve synchronization of AXI FIFO pointers across clock domains.
+ * Added support for the out-of-context flow.
+
+(c) Copyright 2001 - 2014 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

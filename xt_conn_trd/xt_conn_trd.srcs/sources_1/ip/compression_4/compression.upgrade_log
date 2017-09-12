@@ -1,0 +1,100 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Tue Sep  5 10:40:37 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'compression'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of compression from UIUC.CSL.iCSL:user:axis_compression:1.8 (Rev. 2) to UIUC.CSL.iCSL:user:axis_compression:1.9 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Mon Sep  4 18:40:58 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'compression'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of compression from UIUC.CSL.iCSL:user:axis_compression:1.7 (Rev. 2) to UIUC.CSL.iCSL:user:axis_compression:1.8 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Thu Aug 31 16:59:51 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'compression'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of compression from UIUC.CSL.iCSL:user:axis_compression:1.6 (Rev. 2) to UIUC.CSL.iCSL:user:axis_compression:1.7 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Thu Aug 31 13:18:07 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'compression'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of compression from UIUC.CSL.iCSL:user:axis_compression:1.5 (Rev. 2) to UIUC.CSL.iCSL:user:axis_compression:1.6 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (lin64) Build 1056140 Thu Oct 30 16:30:39 MDT 2014
+| Date         : Wed Aug 30 16:51:33 2017
+| Host         : leopard-ubuntu running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'compression'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of compression from UIUC.CSL.iCSL:user:axis_compression:1.4 (Rev. 2) to UIUC.CSL.iCSL:user:axis_compression:1.5 (Rev. 2)
+

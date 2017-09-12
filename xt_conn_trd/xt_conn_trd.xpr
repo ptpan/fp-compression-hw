@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.3.1 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="2" Path="/home/ppan/.Xil/Vivado-18342-leopard-ubuntu/PrjAr/_X_/xt_conn_trd.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="38442489473245e8be5781448caebd27"/>
+    <Option Name="Part" Val="xc7vx690tffg1761-2"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/xt_conn_trd.ipdefs/small_data_compression.srcs"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/ip/pcie3_x8_ip/pcie3_x8_ip.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/pcie3_x8_ip/pcie3_x8_ip.xci"/>
+          <Attr Name="ImportTime" Val="1499371162"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axi4lite_crossbar/axi4lite_crossbar.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/axi4lite_crossbar/axi4lite_crossbar.xci"/>
+          <Attr Name="ImportTime" Val="1499371086"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_async_fifo/axis_async_fifo.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/axis_async_fifo/axis_async_fifo.xci"/>
+          <Attr Name="ImportTime" Val="1499371088"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/cmd_fifo_xgemac_rxif/cmd_fifo_xgemac_rxif.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/cmd_fifo_xgemac_rxif/cmd_fifo_xgemac_rxif.xci"/>
+          <Attr Name="ImportTime" Val="1499371089"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_ic_wr/axis_ic_wr.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/axis_ic_wr/axis_ic_wr.xci"/>
+          <Attr Name="ImportTime" Val="1503780052"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_ic_rd/axis_ic_rd.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/axis_ic_rd/axis_ic_rd.xci"/>
+          <Attr Name="ImportTime" Val="1499786082"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/ten_gig_eth_mac_axi_st_ip/ten_gig_eth_mac_axi_st_ip.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/ten_gig_eth_mac_axi_st_ip/ten_gig_eth_mac_axi_st_ip.xci"/>
+          <Attr Name="ImportTime" Val="1504812722"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/ten_gig_eth_pcs_pma_ip/ten_gig_eth_pcs_pma_ip.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/ten_gig_eth_pcs_pma_ip/ten_gig_eth_pcs_pma_ip.xci"/>
+          <Attr Name="ImportTime" Val="1499371179"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/ten_gig_eth_pcs_pma_ip_shared_logic_in_core/ten_gig_eth_pcs_pma_ip_shared_logic_in_core.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_catalog/ten_gig_eth_pcs_pma_ip_shared_logic_in_core/ten_gig_eth_pcs_pma_ip_shared_logic_in_core.xci"/>
+          <Attr Name="ImportTime" Val="1504812727"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/common/axilite_system.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/common/axilite_system.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/address_decoder.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/address_decoder.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/axi_lite_ipif.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/axi_lite_ipif.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/pselect_f.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/pselect_f.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/counter_f.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/counter_f.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/slave_attachment.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_cores/axi_lite_ipif/slave_attachment.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/common/synchronizer_simple.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/common/synchronizer_simple.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/common/synchronizer_vector.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/common/synchronizer_vector.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/common/registers.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/common/registers.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/common/user_registers_slave.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/common/user_registers_slave.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/common/pcie_monitor_gen3.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/common/pcie_monitor_gen3.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/packet_dma_axi.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/packet_dma_axi.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/axis_ic_bram.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/axis_ic_bram.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/network_path/rx_interface.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/network_path/rx_interface.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/network_path/network_path_shared.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/network_path/network_path_shared.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/network_path/network_path.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/network_path/network_path.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/kcpsm6.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/kcpsm6.vhd"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/power_test_control.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/power_test_control.vhd"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/vc709_power_test.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/vc709_power_test.vhd"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/power_test_control_program.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/pvtmon/power_test_control_program.vhd"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/clock_control/clock_control.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/clock_control/clock_control.vhd"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/clock_control/clock_control_program.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/clock_control/clock_control_program.vhd"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/crc32_D32_wrapper.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/crc32_D32_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/hdr_crc_checker.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/hdr_crc_checker.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/hdr_crc_insert.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/hdr_crc_insert.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/axi_stream_gen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/axi_stream_gen.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/axi_stream_crc_gen_check.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/axi_stream_crc_gen_check.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/pipe_clock.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/pipe_clock.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/xt_connectivity_trd.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/xt_connectivity_trd.v"/>
+          <Attr Name="ImportTime" Val="1504300575"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/decomp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/decomp.v"/>
+          <Attr Name="ImportTime" Val="1504029710"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/array2axis.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/array2axis.v"/>
+          <Attr Name="ImportTime" Val="1501024244"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/dummy_decomp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/dummy_decomp.v"/>
+          <Attr Name="ImportTime" Val="1501001044"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/2D_array_pack_unpack.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/2D_array_pack_unpack.v"/>
+          <Attr Name="ImportTime" Val="1500042362"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/comp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/comp.v"/>
+          <Attr Name="ImportTime" Val="1504389866"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/dummy_comp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/dummy_comp.v"/>
+          <Attr Name="ImportTime" Val="1501006984"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/decompression.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/decompression.v"/>
+          <Attr Name="ImportTime" Val="1504110253"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/comp/compression.v">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../comp/compression.v"/>
+          <Attr Name="ImportTime" Val="1501081021"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/real_comp/sz_1_4.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../real_comp/sz_1_4.v"/>
+          <Attr Name="ImportTime" Val="1501191827"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/real_comp/sz_compress_1.4.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../real_comp/sz_compress_1.4.v"/>
+          <Attr Name="ImportTime" Val="1501087789"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/compression_4/compression.upgrade_log">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/compression_4/compression.upgrade_log"/>
+          <Attr Name="ImportTime" Val="1504626037"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ppan/vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/crc_calc_functions.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk/crc_calc_functions.v"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/archive_project_summary.txt"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="xt_connectivity_trd"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="USE_PVTMON" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/v7_xt_xgemac_xphy.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/constraints/v7_xt_xgemac_xphy.xdc"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/v7_xt_conn_trd_noddr3.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/constraints/v7_xt_conn_trd_noddr3.xdc"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/v7_xt_conn_bit_rev1_0.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/constraints/v7_xt_conn_bit_rev1_0.xdc"/>
+          <Attr Name="ImportTime" Val="1415225557"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constraints/v7_xt_xgemac_xphy.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/pipe_clock.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/pipe_clock.v"/>
+          <Attr Name="ImportTime" Val="1415225558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/dsport/pci_exp_usrapp_com.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/dsport/pci_exp_usrapp_com.v"/>
+          <Attr Name="ImportTime" Val="1499460720"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/dsport/pci_exp_usrapp_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/dsport/pci_exp_usrapp_tx.v"/>
+          <Attr Name="ImportTime" Val="1504029505"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/dsport/pci_exp_usrapp_cfg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/dsport/pci_exp_usrapp_cfg.v"/>
+          <Attr Name="ImportTime" Val="1415225558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/dsport/pci_exp_usrapp_rx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/dsport/pci_exp_usrapp_rx.v"/>
+          <Attr Name="ImportTime" Val="1415225558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/dsport/xilinx_pcie_3_0_7vx_rp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/dsport/xilinx_pcie_3_0_7vx_rp.v"/>
+          <Attr Name="ImportTime" Val="1415225558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/board.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/board.v"/>
+          <Attr Name="ImportTime" Val="1501024274"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/testbench/pcie3_x8_ip_gt_top_pipe.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/pcie3_x8_ip_gt_top_pipe.v"/>
+          <Attr Name="ImportTime" Val="1415225558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="board"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/dsport"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/testbench/include"/>
+        <Option Name="VerilogDir" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/hdl/gen_chk"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimCmdFile" Val="../../../../scripts/xsim_wave_loopback.tcl"/>
+        <Option Name="xsim.simulate.runtime" Val="200us"/>
+        <Option Name="xsim.simulate.xsim.more_options" Val="-testplusarg TESTNAME=basic_test"/>
+        <Define Name="USE_PIPE_SIM" Val="1"/>
+        <Define Name="SIMULATION" Val="1"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="NW_PATH_ENABLE" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="dma_back_end_axi" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dma_back_end_axi">
+      <File Path="$PSRCDIR/dma_back_end_axi/imports/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp"/>
+          <Attr Name="ImportTime" Val="1415225558"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/dma_back_end_axi/imports/sources/constraints/dma_back_end_axi_ooc.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc"/>
+          <Attr Name="ImportTime" Val="1504299774"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="out_of_context"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="dma_back_end_axi"/>
+        <Option Name="TopRTLFile" Val="$PSRCDIR/dma_back_end_axi/imports/sources/ip_cores/dma/netlist/eval/dma_back_end_axi.vp"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="USE_PVTMON" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="dma_constraints" Type="Constrs" RelSrcDir="$PSRCDIR/dma_constraints">
+      <File Path="$PSRCDIR/dma_constraints/imports/constraints/dma_back_end_axi_ooc.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/sources/constraints/dma_back_end_axi_ooc.xdc"/>
+          <Attr Name="ImportTime" Val="1504299774"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="out_of_context"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/dma_constraints/imports/constraints/dma_back_end_axi_ooc.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fp_adder" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fp_adder">
+      <File Path="$PSRCDIR/sources_1/ip/fp_adder/fp_adder.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_adder/fp_adder.xci"/>
+          <Attr Name="ImportTime" Val="1501006372"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fp_adder"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="USE_PVTMON" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fp_div" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fp_div">
+      <File Path="$PSRCDIR/sources_1/ip/fp_div/fp_div.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div.xci"/>
+          <Attr Name="ImportTime" Val="1501006514"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fp_div"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="USE_PVTMON" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fp2fixed" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fp2fixed">
+      <File Path="$PSRCDIR/sources_1/ip/fp2fixed/fp2fixed.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp2fixed/fp2fixed.xci"/>
+          <Attr Name="ImportTime" Val="1501006573"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fp2fixed"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="USE_PVTMON" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="compression" Type="BlockSrcs" RelSrcDir="$PSRCDIR/compression">
+      <File Path="$PSRCDIR/sources_1/ip/compression_4/compression.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/compression_4/compression.xci"/>
+          <Attr Name="ImportTime" Val="1504626037"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="compression"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="USE_XPHY" Val="1"/>
+        <Define Name="USE_PVTMON" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7vx690tffg1761-2" ConstrsSet="constrs_1" Description="Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold" State="current" Dir="$PRUNDIR/synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Flow_PerfOptimized_High" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design">
+          <Option Id="ResourceSharing">2</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="FsmExtraction">1</Option>
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="ShregMinSize">5</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="dma_back_end_axi_synth_1" Type="Ft3:Synth" SrcSet="dma_back_end_axi" Part="xc7vx690tffg1761-2" ConstrsSet="dma_back_end_axi" Description="Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold" Dir="$PRUNDIR/dma_back_end_axi_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Flow_PerfOptimized_High" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design">
+          <Option Id="ResourceSharing">2</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="FsmExtraction">1</Option>
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="ShregMinSize">5</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fp_adder_synth_1" Type="Ft3:Synth" SrcSet="fp_adder" Part="xc7vx690tffg1761-2" ConstrsSet="fp_adder" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fp_adder_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fp_div_synth_1" Type="Ft3:Synth" SrcSet="fp_div" Part="xc7vx690tffg1761-2" ConstrsSet="fp_div" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fp_div_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fp2fixed_synth_1" Type="Ft3:Synth" SrcSet="fp2fixed" Part="xc7vx690tffg1761-2" ConstrsSet="fp2fixed" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fp2fixed_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="compression_synth_1" Type="Ft3:Synth" SrcSet="compression" Part="xc7vx690tffg1761-2" ConstrsSet="compression" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/compression_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="constrs_1" Description="Similar to Peformance_Explore, but enables the physical optimization step (phys_opt_design) with the Explore directive after routing." SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="route_design">
+          <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="dma_back_end_axi_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="dma_back_end_axi" Description="Vivado Implementation Defaults" SynthRun="dma_back_end_axi_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="fp_adder_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="fp_adder" Description="Vivado Implementation Defaults" SynthRun="fp_adder_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="fp_div_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="fp_div" Description="Vivado Implementation Defaults" SynthRun="fp_div_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="fp2fixed_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="fp2fixed" Description="Vivado Implementation Defaults" SynthRun="fp2fixed_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="constrs_1" Description="" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">2</Option>
+        </Step>
+        <Step Id="route_design">
+          <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">1</Option>
+        </Step>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="compression_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-2" ConstrsSet="compression" Description="Vivado Implementation Defaults" SynthRun="compression_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
+</Project>

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Fri Aug 25 15:10:49 2017
+# Process ID: 22021
+# Log file: /home/ppan/DUT/small_data_compression/small_data_compression.runs/controller_synth_1/controller.vds
+# Journal file: /home/ppan/DUT/small_data_compression/small_data_compression.runs/controller_synth_1/vivado.jou
+#-----------------------------------------------------------
+source controller.tcl

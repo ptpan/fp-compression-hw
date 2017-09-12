@@ -1,0 +1,156 @@
+Vivado Simulator 2014.3
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /home/ppan/Xilinx/Vivado/2014.3.1/bin/unwrapped/lnx64.o/xelab -wto d81cf92b51ee45c3b9da6c1d88a986b4 --debug typical --relax -L axi_bram_ctrl_v4_0 -L xil_defaultlib -L lib_pkg_v1_0 -L fifo_generator_v12_0 -L lib_fifo_v1_0 -L lib_srl_fifo_v1_0 -L lib_cdc_v1_0 -L axi_datamover_v5_1 -L axi_sg_v4_1 -L axi_dma_v7_1 -L blk_mem_gen_v8_2 -L unisims_ver -L unimacro_ver -L secureip --snapshot compress_unit_tb_behav xil_defaultlib.compress_unit_tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package axi_bram_ctrl_v4_0.axi_bram_ctrl_funcs
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package unisim.vcomponents
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_unsigned
+Compiling package lib_pkg_v1_0.lib_pkg
+Compiling package axi_dma_v7_1.axi_dma_pkg
+Compiling package axi_sg_v4_1.axi_sg_pkg
+Compiling module xil_defaultlib.shift_debug
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.compress_unit
+Compiling module xil_defaultlib.compression_design
+Compiling module xil_defaultlib.write_bram
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_ELABORATION_D...
+Compiling module xil_defaultlib.dout_bram
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.sng_port_arb [\sng_port_arb(15)\]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.ua_narrow [\ua_narrow(256,5,5)\]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.wrap_brst [\wrap_brst(15,5,256)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000000000000",'0')(...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE('0','0','0','0')\]
+Compiling architecture fdr_v of entity unisim.FDR [\FDR('0')\]
+Compiling architecture imp of entity axi_bram_ctrl_v4_0.SRL_FIFO [\SRL_FIFO(1,8,false)\]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.wr_chnl [\wr_chnl(15,5,256,1,1,"AXI4",1,0...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.rd_chnl [\rd_chnl(15,5,256,1,1,"AXI4",1,0...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.full_axi [\full_axi(15,256,1,"AXI4",1,1,32...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.axi_bram_ctrl_top [\axi_bram_ctrl_top(10,15,256,1,"...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.axi_bram_ctrl [\axi_bram_ctrl("EXTERNAL",1024,1...]
+Compiling architecture controller_arch of entity xil_defaultlib.controller [controller_default]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.sng_port_arb [\sng_port_arb(12)\]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.ua_narrow [\ua_narrow(32,2,2)\]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.wrap_brst [\wrap_brst(12,2,32)\]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.wr_chnl [\wr_chnl(12,2,32,1,1,"AXI4",1,0,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.rd_chnl [\rd_chnl(12,2,32,1,1,"AXI4",1,0,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.full_axi [\full_axi(12,32,1,"AXI4",1,1,32,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.axi_bram_ctrl_top [\axi_bram_ctrl_top(10,12,32,1,"A...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0.axi_bram_ctrl [\axi_bram_ctrl("EXTERNAL",1024,1...]
+Compiling architecture sg_bram_controller_arch of entity xil_defaultlib.sg_bram_controller [sg_bram_controller_default]
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_ELABORATION_D...
+Compiling module xil_defaultlib.sg_bram
+Compiling module xil_defaultlib.mm2s_sg_dma_cmd
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_updt_sm [\axi_sg_updt_sm(32,1,0,1,7,1,7)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_updt_cmdsts_if [\axi_sg_updt_cmdsts_if(32)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_updt_mngr [\axi_sg_updt_mngr(32,1,0,1,7,1,7...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_updt_queue [\axi_sg_updt_queue(32,32,32,33,4...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_updt_q_mngr [\axi_sg_updt_q_mngr(32,32,32,33,...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_intrpt [\axi_sg_intrpt(1,0,1,125)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_ftch_sm [\axi_sg_ftch_sm(32,0,1,0,8,8,4,1...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_ftch_pntr [\axi_sg_ftch_pntr(32,1,0)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_ftch_cmdsts_if [\axi_sg_ftch_cmdsts_if(32)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_ftch_mngr [\axi_sg_ftch_mngr(32,0,1,0,8,8,4...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_ftch_queue [\axi_sg_ftch_queue(32,32,4,8,8,0...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_ftch_q_mngr [\axi_sg_ftch_q_mngr(32,32,0,0,4,...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_reset [\axi_sg_reset(0)\]
+Compiling architecture imp of entity axi_sg_v4_1.axi_sg_fifo [\axi_sg_fifo(68,1,0,2,"virtex7")...]
+Compiling architecture imp of entity axi_sg_v4_1.axi_sg_fifo [\axi_sg_fifo(8,1,0,2,"virtex7")(...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_cmd_status [\axi_sg_cmd_status(32,1,1,0,68,8...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_rd_status_cntl [\axi_sg_rd_status_cntl(8,4)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_scc [\axi_sg_scc(2,32,32,16,68,4,0)\]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_addr_cntl [\axi_sg_addr_cntl(1,32,0,4,4,"vi...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_rddata_cntl [\axi_sg_rddata_cntl(0,2,2,1,32,3...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_mm2s_basic_wrap [\axi_sg_mm2s_basic_wrap(2,0,4,32...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0.dynshreg_f [\dynshreg_f(3,7,"virtex7")(1,7)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_rbu_f [\srl_fifo_rbu_f(7,3,"virtex7")(1...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_f [\srl_fifo_f(7,3,"virtex7")(1,7)\]
+Compiling architecture imp of entity axi_sg_v4_1.axi_sg_fifo [\axi_sg_fifo(7,3,0,2,"virtex7")(...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(3,"virtex...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0.dynshreg_f [\dynshreg_f(3,2,"virtex7")(1,7)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_rbu_f [\srl_fifo_rbu_f(2,3,"virtex7")(1...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_f [\srl_fifo_f(2,3,"virtex7")(1,7)\]
+Compiling architecture imp of entity axi_sg_v4_1.axi_sg_fifo [\axi_sg_fifo(2,3,0,2,"virtex7")(...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_wr_status_cntl [\axi_sg_wr_status_cntl(0,1,3,8,4...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_scc_wr [\axi_sg_scc_wr(2,32,32,16,68,4,0...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_addr_cntl [\axi_sg_addr_cntl(1,32,1,4,4,"vi...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_wrdata_cntl [\axi_sg_wrdata_cntl(0,0,1,2,1,32...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_s2mm_basic_wrap [\axi_sg_s2mm_basic_wrap(2,1,4,32...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg_datamover [\axi_sg_datamover(2,0,4,32,32,32...]
+Compiling architecture implementation of entity axi_sg_v4_1.axi_sg [\axi_sg(32,32,32,32,33,4,4,8,1,7...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_sofeof_gen [\axi_dma_sofeof_gen(0)\]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_reset [\axi_dma_reset(1,0,0,100000000,1...]
+Compiling architecture implementation of entity lib_cdc_v1_0.cdc_sync [\cdc_sync(1,0,1,0,32,4)\]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_rst_module [\axi_dma_rst_module(1,0,1,0,0,10...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_lite_if [\axi_dma_lite_if(23,0,10,32)\]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_register [\axi_dma_register(12,1,14,32,32,...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_reg_module [\axi_dma_reg_module(1,0,1,14,0,1...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_mm2s_sm [\axi_dma_mm2s_sm(32,14,1,4,0)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(5,"virtex...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0.dynshreg_f [\dynshreg_f(16,23,"virtex7")(1,7...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_rbu_f [\srl_fifo_rbu_f(23,16,"virtex7")...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_f [\srl_fifo_f(23,16,"virtex7")(1,7...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_mm2s_sg_if [\axi_dma_mm2s_sg_if(0,0,1,32,32,...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_mm2s_cmdsts_if [\axi_dma_mm2s_cmdsts_if(32,1,0)\]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_mm2s_sts_mngr [\axi_dma_mm2s_sts_mngr(0)\]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_mm2s_mngr [\axi_dma_mm2s_mngr(0,4,1,0,1,14,...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma_s2mm_mngr [\axi_dma_s2mm_mngr(0,4,32,1,0,1,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0.dynshreg_f [\dynshreg_f(4,8,"virtex7")(1,7)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_rbu_f [\srl_fifo_rbu_f(8,4,"virtex7")(1...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0.srl_fifo_f [\srl_fifo_f(8,4,"virtex7")(1,7)\]
+Compiling architecture imp of entity axi_datamover_v5_1.axi_datamover_fifo [\axi_datamover_fifo(8,4,0,2,"vir...]
+Compiling module fifo_generator_v12_0.fifo_generator_v12_0_bhv_ver_ss(...
+Compiling module fifo_generator_v12_0.fifo_generator_v12_0_bhv_ver_pre...
+Compiling module fifo_generator_v12_0.FIFO_GENERATOR_v12_0_CONV_VER(C_...
+Compiling module fifo_generator_v12_0.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v12_0.fifo_generator_v12_0(C_COMMON_CL...
+Compiling architecture implementation of entity lib_fifo_v1_0.sync_fifo_fg [\sync_fifo_fg("virtex7",9,0,1,1,...]
+Compiling architecture imp of entity axi_datamover_v5_1.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(291,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_rd_sf [\axi_datamover_rd_sf(256,64,0,1,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_skid_buf [\axi_datamover_skid_buf(256)\]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_reset [\axi_datamover_reset(0)\]
+Compiling architecture imp of entity axi_datamover_v5_1.axi_datamover_fifo [\axi_datamover_fifo(8,1,0,2,"vir...]
+Compiling architecture imp of entity axi_datamover_v5_1.axi_datamover_fifo [\axi_datamover_fifo(68,1,0,2,"vi...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_cmd_status [\axi_datamover_cmd_status(32,1,1...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_rd_status_cntl [\axi_datamover_rd_status_cntl(8,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(0,32,5,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(1,32,5,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_pcc [\axi_datamover_pcc(1,1,5,32,256,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(1,32,0,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_rdmux [\axi_datamover_rdmux(5,256,256)\]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_rddata_cntl [\axi_datamover_rddata_cntl(0,1,5...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_mm2s_full_wrap [\axi_datamover_mm2s_full_wrap(1,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover_s2mm_omit_wrap [\axi_datamover_s2mm_omit_wrap(0,...]
+Compiling architecture implementation of entity axi_datamover_v5_1.axi_datamover [\axi_datamover(1,0,4,32,256,256,...]
+Compiling architecture implementation of entity axi_dma_v7_1.axi_dma [\axi_dma(10,32,125,0,1,0,0,14,32...]
+Compiling architecture dma_arch of entity xil_defaultlib.DMA [dma_default]
+Compiling module xil_defaultlib.system_design
+Compiling module xil_defaultlib.compress_unit_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 3 sub-compilation(s) to finish...
+Built simulation snapshot compress_unit_tb_behav

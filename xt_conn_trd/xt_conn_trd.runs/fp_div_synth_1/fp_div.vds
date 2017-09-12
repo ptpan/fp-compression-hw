@@ -1,0 +1,716 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Tue Jul 25 13:15:18 2017
+# Process ID: 29566
+# Log file: /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp_div_synth_1/fp_div.vds
+# Journal file: /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp_div_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fp_div.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1761-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.cache/wt [current_project]
+# set_property parent.project_path /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property verilog_define {USE_XPHY=1 USE_PVTMON=1} [current_fileset]
+# read_ip /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ppan/Xilinx/Vivado/2014.3.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'fp_div' generated file not found '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_div' generated file not found '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_div' generated file not found '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_div' generated file not found '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_div' generated file not found '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_funcsim.vhdl'. Please regenerate to continue.
+# set_property is_locked true [get_files /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file fp_div.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top fp_div -part xc7vx690tffg1761-2 -mode out_of_context
+Command: synth_design -top fp_div -part xc7vx690tffg1761-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 908.461 ; gain = 151.293 ; free physical = 13851 ; free virtual = 28804
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fp_div' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/synth/fp_div.vhd:71]
+INFO: [Synth 8-3491] module 'floating_point_v7_0' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0.vhd:108' bound to instance 'U0' of component 'floating_point_v7_0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/synth/fp_div.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'floating_point_v7_0__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0.vhd:224]
+INFO: [Synth 8-3491] module 'floating_point_v7_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:298' bound to instance 'i_synth' of component 'floating_point_v7_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'floating_point_v7_0_viv__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:426]
+INFO: [Synth 8-63] RTL assertion: "in get_registers " [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_pkg.vhd:7779]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv' (1#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'flt_div' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'flt_div_mant' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_mant.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized1' (1#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay' (2#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'flt_div_mant_addsub' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_mant_addsub.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'carry_chain' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:284]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:294]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized3' (2#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (2#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain' (3#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'flt_div_mant_addsub' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_mant_addsub.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized5' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized5' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized7' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized7' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized9' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized9' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'flt_div_mant_addsub__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_mant_addsub.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized0' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized11' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized11' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized4' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized5' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized5' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized6' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized13' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized13' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized6' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized0' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'flt_div_mant_addsub__parameterized0' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_mant_addsub.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized7' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized15' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized15' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized7' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized8' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized17' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized17' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized8' (4#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'flt_div_mant' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_mant.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'flt_div_exp' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_exp.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized9' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized19' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized19' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized9' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'special_detect' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/special_detect.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized10' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized21' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized21' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized10' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized11' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized23' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized23' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized11' (5#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'special_detect' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/special_detect.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized12' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized12' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized13' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized25' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized25' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized13' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized14' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized27' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized27' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized14' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized15' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized29' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized29' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized15' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized16' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized16' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized17' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized17' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized18' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized31' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized31' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized18' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized19' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized33' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized33' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized19' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized20' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized35' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized35' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized20' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized21' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized37' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized37' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized21' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized22' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized39' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized39' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized22' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized23' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized23' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized24' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized41' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized41' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized24' (6#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'flt_div_exp' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div_exp.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'renorm_and_round_logic' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/renorm_and_round_logic.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized25' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized43' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized43' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized25' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized26' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized45' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized45' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized26' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-63] RTL assertion: "******************************************************  renorm_and_round_logic.vhd :    FULL_MANT_RND1_DEL is using fast_input    which will be faster, but create more FFs.******************************************************" [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/renorm_and_round_logic.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized27' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized47' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized47' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized27' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized28' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized49' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized49' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized28' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized29' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized51' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized51' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized29' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'flt_round_bit' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/flt_round_bit.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized1' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized30' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized30' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized1' (7#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'flt_round_bit' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/flt_round_bit.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized2' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized31' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized53' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized53' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized31' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized2' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized3' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized32' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized55' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized55' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized32' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized3' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized4' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized33' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized33' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized4' (8#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'renorm_and_round_logic' (9#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/renorm_and_round_logic.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'flt_dec_op_lat' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/flt_dec_op_lat.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'flt_dec_op_lat' (10#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/flt_dec_op_lat.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'flt_div' (11#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/flt_div/flt_div.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized34' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized57' [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized57' (11#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized34' (11#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/delay.vhd:172]
+WARNING: [Synth 8-3848] Net m_axis_result_tuser_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:764]
+WARNING: [Synth 8-3848] Net m_axis_result_tlast_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:766]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_v7_0_viv__parameterized0' (12#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:426]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_v7_0__parameterized0' (13#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'fp_div' (14#1) [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/synth/fp_div.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 984.703 ; gain = 227.535 ; free physical = 13773 ; free virtual = 28728
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+INFO: [Synth 8-3295] tying undriven pin \CARRYS_Q_DEL.NOT_FAST_OP.CARRY_DEL :D[0] to constant 0 [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/shared/carry_chain.vhd:375]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 984.703 ; gain = 227.535 ; free physical = 13773 ; free virtual = 28728
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3034 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1761/Package.xml
+Loading io standards from /home/ppan/Xilinx/Vivado/2014.3.1/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp_div_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp_div_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1497.242 ; gain = 0.996 ; free physical = 13418 ; free virtual = 28374
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13416 ; free virtual = 28372
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13416 ; free virtual = 28372
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp_div_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13417 ; free virtual = 28372
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net m_axis_result_tuser_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:764]
+WARNING: [Synth 8-3848] Net m_axis_result_tlast_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/floating_point_v7_0/hdl/floating_point_v7_0_viv.vhd:766]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13402 ; free virtual = 28358
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized2) to 'U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized2) to 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/EXP_INC_DELAY' (delay__parameterized2) to 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/\EXP_IN_DELAY.EXP_IN_DEL ' (delay__parameterized29) to 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/\EXP_RND2_DELAY.EXP_RND_DEL '
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/\EXP_IN_DELAY.EXP_OFF_OP_DEL ' (delay__parameterized29) to 'U0/i_synth/\DIV_OP.SPD.OP /ROUND/\EXP_RND2_DELAY.EXP_OFF_RND_DEL '
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13402 ; free virtual = 28358
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[53].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '53' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[50].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '50' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[47].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '47' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[44].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '44' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[41].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '41' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[38].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '38' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[35].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '35' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[32].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '32' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[29].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '29' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[26].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '26' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[23].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '23' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[20].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '20' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[17].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '17' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[14].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '14' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '11' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[8].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '8' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '5' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[2].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '2' bits. [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:252]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13402 ; free virtual = 28358
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13402 ; free virtual = 28358
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13386 ; free virtual = 28342
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13386 ; free virtual = 28342
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13386 ; free virtual = 28342
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13386 ; free virtual = 28342
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13371 ; free virtual = 28327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13366 ; free virtual = 28323
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][3] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][2] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][1] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][0] ) is unused and will be removed from module floating_point_v7_0_viv__parameterized0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13341 ; free virtual = 28297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13341 ; free virtual = 28297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13340 ; free virtual = 28297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13341 ; free virtual = 28298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     8|
+|2     |LUT1    |    13|
+|3     |LUT2    |   246|
+|4     |LUT3    |  2815|
+|5     |LUT4    |    66|
+|6     |LUT5    |     2|
+|7     |LUT6    |    39|
+|8     |MUXCY   |  2981|
+|9     |SRL16E  |    49|
+|10    |SRLC32E |    18|
+|11    |XORCY   |  2980|
+|12    |FDRE    |  2067|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13341 ; free virtual = 28298
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1497.242 ; gain = 124.234 ; free physical = 13341 ; free virtual = 28298
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.242 ; gain = 740.074 ; free physical = 13341 ; free virtual = 28298
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2988 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 787 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 787 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+413 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1497.242 ; gain = 636.777 ; free physical = 13299 ; free virtual = 28256
+# rename_ref -prefix_all fp_div_
+INFO: [Coretcl 2-1174] Renamed 223 cell refs.
+# write_checkpoint -noxdef fp_div.dcp
+# catch { report_utilization -file fp_div_utilization_synth.rpt -pb fp_div_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1497.242 ; gain = 0.000 ; free physical = 13296 ; free virtual = 28255
+# if { [catch {
+#   file copy -force /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp_div_synth_1/fp_div.dcp /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div.dcp
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_stub.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_stub.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_funcsim.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.srcs/sources_1/ip/fp_div/fp_div_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 25 13:16:08 2017...

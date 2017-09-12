@@ -1,0 +1,602 @@
+
+*** Running vivado
+    with args -log system_design.vds -m64 -mode batch -messageDb vivado.pb -source system_design.tcl
+
+
+****** Vivado v2014.3.1 (64-bit)
+  **** SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+  **** IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source system_design.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1761-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/ppan/Desktop/small_data_compression/small_data_compression.cache/wt [current_project]
+# set_property parent.project_path /home/ppan/Desktop/small_data_compression/small_data_compression.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property board_part xilinx.com:vc709:part0:1.4 [current_project]
+# set_property ip_repo_paths {
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs
+#   /home/ppan/DUT/small_data_compression
+# } [current_project]
+# add_files -quiet /home/ppan/Desktop/small_data_compression/small_data_compression.runs/dout_bram_synth_1/dout_bram.dcp
+# set_property used_in_implementation false [get_files /home/ppan/Desktop/small_data_compression/small_data_compression.runs/dout_bram_synth_1/dout_bram.dcp]
+# add_files -quiet /home/ppan/Desktop/small_data_compression/small_data_compression.runs/controller_synth_1/controller.dcp
+# set_property used_in_implementation false [get_files /home/ppan/Desktop/small_data_compression/small_data_compression.runs/controller_synth_1/controller.dcp]
+# add_files -quiet /home/ppan/Desktop/small_data_compression/small_data_compression.runs/DMA_synth_1/DMA.dcp
+# set_property used_in_implementation false [get_files /home/ppan/Desktop/small_data_compression/small_data_compression.runs/DMA_synth_1/DMA.dcp]
+# add_files -quiet /home/ppan/Desktop/small_data_compression/small_data_compression.runs/sg_bram_controller_synth_1/sg_bram_controller.dcp
+# set_property used_in_implementation false [get_files /home/ppan/Desktop/small_data_compression/small_data_compression.runs/sg_bram_controller_synth_1/sg_bram_controller.dcp]
+# add_files -quiet /home/ppan/Desktop/small_data_compression/small_data_compression.runs/sg_bram_synth_1/sg_bram.dcp
+# set_property used_in_implementation false [get_files /home/ppan/Desktop/small_data_compression/small_data_compression.runs/sg_bram_synth_1/sg_bram.dcp]
+# read_verilog -library xil_defaultlib {
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/trans.v
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compress_unit.v
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/write_bram.v
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/sg_dma_command.v
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compression_design.v
+#   /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/system_design.v
+# }
+# read_xdc /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/constrs_1/new/system_design.xdc
+# set_property used_in_implementation false [get_files /home/ppan/Desktop/small_data_compression/small_data_compression.srcs/constrs_1/new/system_design.xdc]
+# catch { write_hwdef -file system_design.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top system_design -part xc7vx690tffg1761-2
+Command: synth_design -top system_design -part xc7vx690tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2017.09' and will expire in 24 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 900.461 ; gain = 143.293 ; free physical = 12341 ; free virtual = 29607
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_design' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/system_design.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_debug' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:23]
+WARNING: [Synth 8-567] referenced signal 'tlast_i' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:63]
+WARNING: [Synth 8-567] referenced signal 'valid' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:63]
+WARNING: [Synth 8-567] referenced signal 'tlast_i' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:75]
+WARNING: [Synth 8-567] referenced signal 'last' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:75]
+WARNING: [Synth 8-567] referenced signal 'is_header' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:87]
+WARNING: [Synth 8-567] referenced signal 'tdata' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:103]
+WARNING: [Synth 8-567] referenced signal 'tail' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:103]
+WARNING: [Synth 8-567] referenced signal 'dout' should be on the sensitivity list [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:103]
+INFO: [Synth 8-256] done synthesizing module 'shift_debug' (1#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:23]
+INFO: [Synth 8-638] synthesizing module 'compression_design' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compression_design.v:23]
+	Parameter ERRBOUND bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'compress_unit' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compress_unit.v:23]
+INFO: [Synth 8-638] synthesizing module 'trans' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/trans.v:23]
+INFO: [Synth 8-256] done synthesizing module 'trans' (2#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/trans.v:23]
+INFO: [Synth 8-256] done synthesizing module 'compress_unit' (3#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compress_unit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'compression_design' (4#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compression_design.v:23]
+INFO: [Synth 8-638] synthesizing module 'write_bram' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/write_bram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'write_bram' (5#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/write_bram.v:23]
+INFO: [Synth 8-638] synthesizing module 'dout_bram' [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/dout_bram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dout_bram' (6#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/dout_bram_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'controller' [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/controller_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'controller' (7#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/controller_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'sg_bram_controller' [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/sg_bram_controller_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'sg_bram_controller' (8#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/sg_bram_controller_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'sg_bram' [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/sg_bram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'sg_bram' (9#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/sg_bram_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'mm2s_sg_dma_cmd' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/sg_dma_command.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/sg_dma_command.v:81]
+INFO: [Synth 8-256] done synthesizing module 'mm2s_sg_dma_cmd' (10#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/sg_dma_command.v:24]
+INFO: [Synth 8-638] synthesizing module 'DMA' [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/DMA_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'DMA' (11#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/realtime/DMA_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'system_design' (12#1) [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/system_design.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 935.703 ; gain = 178.535 ; free physical = 12303 ; free virtual = 29569
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 935.703 ; gain = 178.535 ; free physical = 12303 ; free virtual = 29569
+---------------------------------------------------------------------------------
+Loading clock regions from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1761/Package.xml
+Loading io standards from /home/ppan/Xilinx/Vivado/2014.3.1/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/ppan/Xilinx/Vivado/2014.3.1/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/dcp_2/controller_in_context.xdc] for cell 'controller'
+Finished Parsing XDC File [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/dcp_2/controller_in_context.xdc] for cell 'controller'
+Parsing XDC File [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/dcp_4/sg_bram_controller_in_context.xdc] for cell 'sg_bram_controller_inst'
+Finished Parsing XDC File [/home/ppan/Desktop/small_data_compression/small_data_compression.runs/synth_1/.Xil/Vivado-4348-leopard-ubuntu/dcp_4/sg_bram_controller_in_context.xdc] for cell 'sg_bram_controller_inst'
+Parsing XDC File [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/constrs_1/new/system_design.xdc]
+Finished Parsing XDC File [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/constrs_1/new/system_design.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1466.262 ; gain = 0.000 ; free physical = 11933 ; free virtual = 29199
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11932 ; free virtual = 29198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11932 ; free virtual = 29198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11932 ; free virtual = 29198
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'm_axi_lite_awvalid_reg' into 'm_axi_lite_wvalid_reg' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/sg_dma_command.v:73]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'mm2s_sg_dma_cmd'
+WARNING: [Synth 8-327] inferring latch for variable 'dout_i_reg' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'is_header_i_reg' [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11924 ; free virtual = 29191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 27    
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 7     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   4 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   5 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 8     
++---Registers : 
+	              272 Bit    Registers := 1     
+	              256 Bit    Registers := 3     
+	              176 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input    272 Bit        Muxes := 2     
+	   2 Input    256 Bit        Muxes := 11    
+	   2 Input     32 Bit        Muxes := 16    
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   3 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 18    
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module system_design 
+Detailed RTL Component Info : 
+Module shift_debug 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	              176 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module trans 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module compress_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+Module compression_design 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input      8 Bit       Adders := 1     
+	   4 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   5 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 8     
++---Registers : 
+	              272 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    272 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module write_bram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	              256 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 8     
+	   2 Input     10 Bit        Muxes := 3     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module mm2s_sg_dma_cmd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11924 ; free virtual = 29190
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11924 ; free virtual = 29190
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11924 ; free virtual = 29190
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wbram/\w_addr0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (comp_unit/\sig_bytes0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd/bytes_i_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd/sg_bram_w_din_reg[255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd/sg_bram_pointer0_inferred /\cmd/sg_bram_pointer_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd/m_axi_lite_awaddr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd/bytes_i_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[255]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[254]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[253]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[252]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[251]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[250]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[249]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[248]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[247]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[246]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[245]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[244]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[243]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[242]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[241]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[240]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[239]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[238]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[237]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[236]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[235]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[234]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[233]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[232]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[231]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[230]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[229]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[228]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[227]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[226]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[225]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[224]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[223]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[222]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[221]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[220]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[219]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[218]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[217]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[216]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[215]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[214]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[213]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[212]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[211]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[210]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[209]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[208]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[207]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[206]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[205]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[204]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[203]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[202]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[201]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[200]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[199]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[198]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[197]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[196]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[195]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[194]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[193]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[192]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[191]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[190]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[189]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[188]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[187]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[186]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[185]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[184]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[183]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[182]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[181]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[180]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[179]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[178]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[177]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[176]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[175]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[174]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[173]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[172]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[171]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[170]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[169]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[168]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[167]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[166]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[165]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[164]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[163]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[162]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[161]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[160]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[159]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[158]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[157]__0 ) is unused and will be removed from module system_design.
+WARNING: [Synth 8-3332] Sequential element (\shift/dout_i_reg[156]__0 ) is unused and will be removed from module system_design.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (comp_unit/\sig_bytes0_reg[5] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11900 ; free virtual = 29166
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11900 ; free virtual = 29166
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11900 ; free virtual = 29166
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11900 ; free virtual = 29166
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11878 ; free virtual = 29144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11878 ; free virtual = 29144
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11868 ; free virtual = 29134
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11867 ; free virtual = 29134
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11867 ; free virtual = 29134
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11867 ; free virtual = 29134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |dout_bram          |         1|
+|2     |controller         |         1|
+|3     |sg_bram_controller |         1|
+|4     |sg_bram            |         1|
+|5     |DMA                |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |DMA                |     1|
+|2     |controller         |     1|
+|3     |dout_bram          |     1|
+|4     |sg_bram            |     1|
+|5     |sg_bram_controller |     1|
+|6     |BUFG               |     1|
+|7     |LUT1               |     1|
+|8     |LUT2               |     4|
+|9     |LUT3               |     3|
+|10    |LUT4               |     3|
+|11    |LUT5               |     3|
+|12    |LUT6               |     5|
+|13    |FDCE               |    17|
+|14    |IBUF               |     5|
+|15    |OBUF               |   291|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+------------+-------------------+------+
+|      |Instance    |Module             |Cells |
++------+------------+-------------------+------+
+|1     |top         |                   |  1851|
+|2     |  comp_unit |compression_design |     4|
+|3     |  shift     |shift_debug        |     6|
+|4     |  wbram     |write_bram         |    26|
++------+------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11867 ; free virtual = 29134
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2152 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1466.262 ; gain = 78.234 ; free physical = 11866 ; free virtual = 29132
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 709.094 ; free physical = 11866 ; free virtual = 29132
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1466.262 ; gain = 608.797 ; free physical = 11856 ; free virtual = 29122
+# write_checkpoint system_design.dcp
+# catch { report_utilization -file system_design_utilization_synth.rpt -pb system_design_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1466.262 ; gain = 0.000 ; free physical = 11854 ; free virtual = 29120
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  6 15:06:34 2017...

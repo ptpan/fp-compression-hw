@@ -1,0 +1,136 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/dout_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/dout_bram/sim/dout_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dout_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:125]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:147]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:161]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:181]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:200]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:218]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:687]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1046]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1322]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1545]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1615]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1911]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:2003]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3453]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v12_0
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-311] analyzing module FIFO_GENERATOR_v12_0_CONV_VER
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0_sync_stage
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0_bhv_ver_as
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0_beh_ver_ll_afifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0_bhv_ver_ss
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0_bhv_ver_preload0
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0_axic_reg_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/DMA/fifo_generator_v12_0/hdl/fifo_generator_v12_0_top.v" into library fifo_generator_v12_0
+INFO: [VRFC 10-311] analyzing module fifo_generator_v12_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:125]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:147]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:161]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:181]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:200]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:218]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:687]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1046]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1322]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1545]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1615]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1911]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:2003]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram_controller/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3453]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:125]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:147]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:161]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:181]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:200]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:218]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:687]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1046]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1322]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1545]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1615]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1911]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:2003]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3453]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/ip/sg_bram/sim/sg_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sg_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compress_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compress_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/write_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/shift_debug.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_debug
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/sg_dma_command.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mm2s_sg_dma_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/compression_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compression_design
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sources_1/new/system_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_design
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.srcs/sim_1/new/compress_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compress_unit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ppan/Desktop/small_data_compression/small_data_compression.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

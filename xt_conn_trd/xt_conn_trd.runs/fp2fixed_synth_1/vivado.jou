@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Tue Jul 25 13:16:18 2017
+# Process ID: 29662
+# Log file: /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp2fixed_synth_1/fp2fixed.vds
+# Journal file: /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.runs/fp2fixed_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fp2fixed.tcl

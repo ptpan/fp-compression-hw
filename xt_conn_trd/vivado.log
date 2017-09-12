@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Fri Sep  8 10:14:13 2017
+# Process ID: 18342
+# Log file: /home/ppan/vivado.log
+# Journal file: /home/ppan/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/runs/xt_conn_trd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ppan/DUT/small_data_compression'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ppan/Desktop/small_data_compression/small_data_compression.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ppan/Xilinx/Vivado/2014.3.1/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:14 . Memory (MB): peak = 5827.074 ; gain = 160.535 ; free physical = 11774 ; free virtual = 30732
+archive_project /home/ppan/vc709/v7_xt_conn_trd/hardware/vivado/xt_conn_trd.xpr.zip -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ppan/DUT/small_data_compression'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ppan/Desktop/small_data_compression/small_data_compression.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ppan/Xilinx/Vivado/2014.3.1/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'dma_back_end_axi_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'fp_adder_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'fp_div_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'fp2fixed_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'compression_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'dma_back_end_axi_impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'fp_adder_impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'fp_div_impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'fp2fixed_impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_2'
+INFO: [Coretcl 2-1213] Including run results for 'compression_impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'dma_back_end_axi'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'dma_constraints'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'fp_adder'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'fp_adder'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'fp_div'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'fp_div'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'fp2fixed'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'fp2fixed'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'compression'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'compression'

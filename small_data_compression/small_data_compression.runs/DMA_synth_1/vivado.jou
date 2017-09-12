@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:32:04 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Thu Aug 31 11:41:09 2017
+# Process ID: 9849
+# Log file: /media/frankqz/c35fb864-558a-4c20-ae81-7faa0c86f8e4/Xilinx/projects/small_data_compression/small_data_compression.runs/DMA_synth_1/DMA.vds
+# Journal file: /media/frankqz/c35fb864-558a-4c20-ae81-7faa0c86f8e4/Xilinx/projects/small_data_compression/small_data_compression.runs/DMA_synth_1/vivado.jou
+#-----------------------------------------------------------
+source DMA.tcl
